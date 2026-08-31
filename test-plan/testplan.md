@@ -103,10 +103,10 @@ Smoke testing will be used to determine whether the application is sufficiently 
 
 ## 8. Deliverables
 
-The following deliverables are planned for this project:
+Deliverables that are planned for this project are in the following:
 
 * Test Plan
-* Test suites containing Manual Test Cases — **85 test cases**
+* Test suites containing Manual Test Cases
 * Smoke Test Suite
 * Test Execution Report
 * Defect Log / Bug Reports
@@ -128,7 +128,7 @@ The following deliverables are planned for this project:
 
 ## 10. Notes
 
-To keep this portfolio project focused and practical, the following formal test-plan sections are intentionally excluded for the current version:
+To keep this portfolio project focused and practical, the following formal test-plan portions are intentionally excluded from the current version:
 
 * Detailed test types
 * Test environment
