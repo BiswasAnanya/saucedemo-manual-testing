@@ -14,9 +14,8 @@
 ## 1. Introduction
 
 This test plan defines the scope, approach, test data, and deliverables for testing the **SauceDemo** web application.
-
 SauceDemo is a sample e-commerce application designed for QA practice. The application covers key e-commerce workflows including authentication, product browsing, shopping cart management, and checkout.
-The purpose of this document is to ensure that testing activities are planned, executed, and documented in a structured and repeatable manner while validating the application's core functionality and identifying potential defects. 
+
 **Application:** [SauceDemo](https://www.saucedemo.com/)
 
 
@@ -53,7 +52,7 @@ The objectives of this testing project are to:
 
 ## 4. Test Coverage
 
-The manual test suite is designed to provide coverage across the following areas:
+Testing will cover the following functional and non-functional areas:
 
 | Area                   | Coverage                                       |
 | ---------------------- | ---------------------------------------------- |
@@ -66,7 +65,6 @@ The manual test suite is designed to provide coverage across the following areas
 | UI/Visual              | Layout, images, consistency                    |
 | Edge Cases             | Boundary and unexpected user interactions      |
 
-The current manual suite contains **85 test cases**, with a dedicated **smoke test suite** covering the application's critical business flow.
 
 ## 5. Test Data
 
@@ -108,7 +106,7 @@ Smoke testing will be used to determine whether the application is sufficiently 
 The following deliverables are planned for this project:
 
 * Test Plan
-* Manual Test Cases — **85 test cases**
+* Test suites containing Manual Test Cases — **85 test cases**
 * Smoke Test Suite
 * Test Execution Report
 * Defect Log / Bug Reports
@@ -116,19 +114,28 @@ The following deliverables are planned for this project:
 
 **N. B:** The automation deliverables will be added as the project progresses.
 
+## 9. Project Status
 
-## 9. Notes
+| Activity              | Status         |
+| --------------------- | -------------- |
+| Test Plan             | ✅ Completed    |
+| Test Cases            | ✅ 85 completed |
+| Smoke Suite           | ✅ Completed    |
+| Manual Execution      | ✅ Completed |
+| Defect Reporting      | 🔄 In progress |
+| Test Summary          | 🔄 In progress      |
+| Playwright Automation | ⏳ Planned      |
+
+## 10. Notes
 
 To keep this portfolio project focused and practical, the following formal test-plan sections are intentionally excluded for the current version:
 
-* Document information and version history
-* Out-of-scope features
 * Detailed test types
 * Test environment
 * Test schedule
 * Entry and exit criteria
 * Requirements Traceability Matrix (RTM)
 * Risk assumptions
-
+  
 These sections may be added later if required as the project evolves.
 
