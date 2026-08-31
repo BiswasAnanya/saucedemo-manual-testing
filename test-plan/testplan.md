@@ -16,7 +16,7 @@
 This test plan defines the scope, approach, test data, and deliverables for testing the **SauceDemo** web application.
 SauceDemo is a sample e-commerce application designed for QA practice. The application covers key e-commerce workflows including authentication, product browsing, shopping cart management, and checkout.
 
-**System Under Test(SUT):** [SauceDemo](https://www.saucedemo.com/)
+**System Under Test (SUT):** [SauceDemo](https://www.saucedemo.com/)
 
 
 ## 2. Objective
