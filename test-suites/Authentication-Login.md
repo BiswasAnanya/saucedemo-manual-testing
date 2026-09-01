@@ -1,4 +1,4 @@
-## Test Suite - Authentication / Login
+## Test Suite - Authentication/Login
 
 This test suite consists of test-cases covering authentication and login functionality,
 including positive, negative, validation, and user-specific scenarios.
