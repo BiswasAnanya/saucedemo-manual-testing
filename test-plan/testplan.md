@@ -100,9 +100,9 @@ The smoke suite focuses on critical functionality required for the primary custo
 The smoke suite will therefore prioritize verification of this critical path.
 Smoke testing will be used to determine whether the application is sufficiently stable for further testing after a build or deployment.
 
-## 10. Entry and Exit Criteria
+## 8. Entry and Exit Criteria
 
-### 10.1 Entry Criteria
+### 8.1 Entry Criteria
 
 - Test Plan has been reviewed and finalized.
 - Manual test cases have been written and reviewed.
@@ -110,7 +110,7 @@ Smoke testing will be used to determine whether the application is sufficiently 
 - Predefined test user credentials (standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user) are available and working.
 - Test environment (browser, OS) is set up and confirmed.
 
-### 10.2 Exit Criteria
+### 8.2 Exit Criteria
 
 - All planned test cases have been executed.
 - All identified defects have been logged with appropriate severity/priority.
