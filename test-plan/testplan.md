@@ -100,8 +100,26 @@ The smoke suite focuses on critical functionality required for the primary custo
 The smoke suite will therefore prioritize verification of this critical path.
 Smoke testing will be used to determine whether the application is sufficiently stable for further testing after a build or deployment.
 
+## 10. Entry and Exit Criteria
 
-## 8. Deliverables
+### 10.1 Entry Criteria
+
+- Test Plan has been reviewed and finalized.
+- Manual test cases have been written and reviewed.
+- SauceDemo application (https://www.saucedemo.com) is accessible and stable.
+- Predefined test user credentials (standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user) are available and working.
+- Test environment (browser, OS) is set up and confirmed.
+
+### 10.2 Exit Criteria
+
+- All planned test cases have been executed.
+- All identified defects have been logged with appropriate severity/priority.
+- No open defects blocking the critical path (Login → Browse → Add to Cart → Checkout → Order Confirmation).
+- Test Execution Report and Test Summary have been completed.
+- Smoke suite passes successfully on the final build/version tested.
+
+
+## 9. Deliverables
 
 Deliverables that are planned for this project are in the following:
 
@@ -114,17 +132,6 @@ Deliverables that are planned for this project are in the following:
 
 **N. B:** The automation deliverables will be added as the project progresses.
 
-## 9. Project Status
-
-| Activity              | Status         |
-| --------------------- | -------------- |
-| Test Plan             | ✅ Completed    |
-| Test Cases            | ✅ 85 completed |
-| Smoke Suite           | ✅ Completed    |
-| Manual Execution      | ✅ Completed |
-| Defect Reporting      | 🔄 In progress |
-| Test Summary          | 🔄 In progress      |
-| Playwright Automation | ⏳ Planned      |
 
 ## 10. Notes
 
@@ -133,9 +140,9 @@ To keep this portfolio project focused and practical, the following formal test-
 * Detailed test types
 * Test environment
 * Test schedule
-* Entry and exit criteria
 * Requirements Traceability Matrix (RTM)
 * Risk assumptions
+* Approval
   
 These sections may be added later if required as the project evolves.
 
