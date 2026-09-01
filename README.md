@@ -5,6 +5,7 @@ A manual QA portfolio project testing the [SauceDemo](https://www.saucedemo.com)
 This repository contains the test cases, execution results, defect documentation, and supporting evidence created while testing the application's main user workflows.
 
 ## 📌 What This Project Demonstrates
+
 - Test planning & strategy (risk-based approach)
 - Feature-wise manual test suite design (60 cases across 6 suites) covering positive, negative & edge-case scenarios
 - Smoke testing
