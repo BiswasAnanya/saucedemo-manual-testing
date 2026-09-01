@@ -7,7 +7,7 @@ This repository contains the test cases, execution results, defect documentation
 ## 📌 What This Project Demonstrates
 
 - Test planning & strategy (risk-based approach)
-- Feature-wise manual test suite design (85 test-cases across 6 suites) covering positive, negative & edge-case scenarios
+- Feature-wise manual test suite design (85 test-cases across 8 suites) covering positive, negative & edge-case scenarios
 - Smoke testing
 - Test Execution
 - Defect reporting
