@@ -1,6 +1,6 @@
 # SauceDemo Manual Testing Project
 
-A manual QA portfolio project testing the [SauceDemo](https://www.saucedemo.com) e-commerce app end-to-end — covering functional, negative, UI, and user-specific test scenarios, with plans for Playwright automation.
+A manual QA portfolio project testing the [SauceDemo](https://www.saucedemo.com) e-commerce app end-to-end; covering functional, negative, UI, and user-specific test scenarios.
 
 This repository contains the test cases, execution results, defect documentation, and supporting evidence created while testing the application's main user workflows.
 
