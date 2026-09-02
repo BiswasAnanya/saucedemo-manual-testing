@@ -4,13 +4,11 @@
 
 This Smoke Test Suite contains a prioritized subset of SauceDemo functional test cases selected to validate the application's most critical business workflows.
 
-The smoke suite focuses on the primary customer journey:
+This suite focuses on the primary customer journey:
 
 **Login → Browse Products → Add to Cart → Checkout → Order Confirmation**
 
-It also includes essential logout functionality. These scenarios provide a quick assessment of whether the application is stable enough for further functional or regression testing.
-
-The same smoke test cases will be used for both **manual testing** and **Playwright + TypeScript automation**, providing traceability between the manual QA phase and subsequent automation phase. The original manual test case IDs are referenced below to maintain traceability between the complete test suite and the prioritized smoke coverage.
+It also includes essential logout functionality. These scenarios provide a quick assessment of whether the application is stable enough for further functional or regression testing. The original manual test case IDs are referenced below to maintain traceability between the complete test suite and the prioritized smoke coverage.
 
 ## Smoke Test Suite
 
@@ -45,8 +43,8 @@ The **10 smoke tests** provide coverage of the application's most important func
    - Application is deployed and accessible
 
  ## Exit Criteria
-   - All 11 smoke tests pass → proceed with full regression suite
-   - Any Critical-priority failure → halt further testing, report immediately
+   - All 10 smoke tests pass → Proceed with the full regression suite
+   - Any Critical-priority failure → Hold further testing, report to the designated team 
 
  ## Out of Scope for Smoke Testing
 
