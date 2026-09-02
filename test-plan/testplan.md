@@ -4,7 +4,9 @@
 
 **Project:** SauceDemo-Manual Testing Project
 
-**Version:** 1.0
+**Build/Version Tested:** Live site as of July 2026
+
+**Document Version:** 1.0
 
 **Author:** Ananya Biswas
 
