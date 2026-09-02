@@ -29,7 +29,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 | Checkout: Step Two (Overview)             |               13 |     10 |      3 |     76.92% |     23.08% | ⚠️ Partially Passed     |
 | Checkout: Complete                        |                9 |      7 |      2 |     77.78% |     22.22% | ⚠️ Partially Passed     |
 | Logout/Session Handling                   |                9 |      8 |      1 |     88.89% |     11.11% | ⚠️ Partially Passed     |
-| **Overall**                               |           **85** | **58** | **27** | **68.24%** | **31.76%** | **⚠️ Partially Passed** |
+| **Overall**                               |           **85** | **58** | **27** | **68.24%** | **31.76%** | ⚠️ Partially Passed**   |
 
 
 ## Key Execution Findings
