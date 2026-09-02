@@ -39,6 +39,22 @@ The **10 smoke tests** provide coverage of the application's most important func
 * **Post-Order State** – Cart clearance after order completion
 * **Session Management** – Successful logout
 
+
+
+ ## Entry Criteria
+   - Application is deployed and accessible
+
+ ## Exit Criteria
+   - All 11 smoke tests pass → proceed with full regression suite
+   - Any Critical-priority failure → halt further testing, report immediately
+
+ ## Out of Scope for Smoke Testing
+
+   - Negative/invalid input scenarios
+   - Special-user behavior (problem_user, error_user, etc.)
+   - UI/visual validation
+   - Edge cases and boundary testing
+
 ## Automation Usage
 
 These smoke tests will serve as the initial automation scope for the **Playwright + TypeScript** test suite.
