@@ -1,6 +1,6 @@
 ## Test Suite - Checkout: Step Two (Overview)
 
-These following test-cases validates Checkout Overview page access, cart item details, 
+These following test-cases validates Checkout Overview page access, cart item details,
 payment and shipping information,price calculations, order completion, cancellation, 
 and special-user checkout behavior.
 
@@ -23,4 +23,4 @@ and special-user checkout behavior.
 
 ## Summary
 
-**Total Test Cases:** 13 | ✅ **Passed:** 11 | ❌ **Failed:** 2
+**Total Test Cases:** 13 | ✅ **Passed:** 10 | ❌ **Failed:** 3
