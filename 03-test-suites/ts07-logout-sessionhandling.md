@@ -15,3 +15,6 @@ browser navigation after logout, and cart isolation across user sessions.
 | TC-708       | Verify cart state after logout and subsequent login          | User is logged in with products in cart | `standard_user / secret_sauce` | 1. Log in.<br>2. Add 2 products to cart.<br>3. Log out.<br>4. Log in again.<br>5. Open Cart.                                                                       | The 2 products should remain in the cart after re-login.                                                    | Both products remain in the cart after logging in again.                                                                               | Passed      |
 | TC-709       | Verify cart data is isolated between user sessions           | `standard_user` cart is initially empty | Multiple valid SauceDemo users | 1. Log in as `standard_user`.<br>2. Add 2 products.<br>3. Verify cart.<br>4. Log out.<br>5. Log in as another user.<br>6. Open Cart.<br>7. Repeat for other users. | Each user session should have an independent cart. A new user should not inherit another user's cart items. | The same 2 products remain in the cart after logging in as `error_user`,<br> `problem_user`, `performance_glitch_user`, and `visual_user`. | Failed      |
 
+## Summary
+
+**Total Test Cases:** 9 | ✅ **Passed:** 8 | ❌ **Failed:** 1
