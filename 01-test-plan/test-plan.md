@@ -6,6 +6,8 @@
 
 **Build/Version Tested:** Live site as of July 2026
 
+**Test Environment:** Chrome (latest), Linux
+
 **Document Version:** 1.0
 
 **Author:** Ananya Biswas
@@ -102,9 +104,14 @@ The smoke suite focuses on critical functionality required for the primary custo
 The smoke suite will therefore prioritize verification of this critical path.
 Smoke testing will be used to determine whether the application is sufficiently stable for further testing after a build or deployment.
 
-## 8. Entry and Exit Criteria
+## 8. Item Pass/Fail Criteria
 
-### 8.1 Entry Criteria
+- A test case is **Passed** when,  actual result matches the expected result for the test case.
+- A test case is **Failed** when, actual result deviates from the expected result, or a defect blocks core functionality (e.g., login, cart, checkout).
+
+## 9. Entry and Exit Criteria
+
+### 9.1 Entry Criteria
 
 - Test Plan has been reviewed and finalized.
 - Manual test cases have been written and reviewed.
@@ -112,7 +119,7 @@ Smoke testing will be used to determine whether the application is sufficiently 
 - Predefined test user credentials (standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user) are available and working.
 - Test environment (browser, OS) is set up and confirmed.
 
-### 8.2 Exit Criteria
+### 9.2 Exit Criteria
 
 - All planned test cases have been executed.
 - All identified defects have been logged with appropriate severity/priority.
@@ -121,11 +128,12 @@ Smoke testing will be used to determine whether the application is sufficiently 
 - Smoke suite passes successfully on the final build/version tested.
 
 
-## 9. Deliverables
+## 10. Deliverables
 
 Deliverables that are planned for this project are in the following:
 
 * Test Plan
+* Requirements Traceability Matrix (RTM)
 * Test suites containing Manual Test Cases
 * Smoke Test Suite
 * Test Execution Report
@@ -135,14 +143,13 @@ Deliverables that are planned for this project are in the following:
 **N. B:** The automation deliverables will be added as the project progresses.
 
 
-## 10. Notes
+## 11. Notes
 
 To keep this portfolio project focused and practical, the following formal test-plan portions are intentionally excluded from the current version:
 
 * Detailed test types
-* Test environment
 * Test schedule
-* Requirements Traceability Matrix (RTM)
+* Test Scenarios
 * Risk assumptions
 * Approval
   
