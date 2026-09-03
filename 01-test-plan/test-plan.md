@@ -31,6 +31,7 @@ The objectives of this testing project are to:
 * Verify positive, negative, edge-case, UI/visual, performance, and session-management scenarios.
 * Identify and document application defects and user-specific issues.
 * Build a structured manual test suite that can be mapped to automated tests.
+* Analyze identified defects for common patterns or root causes across features, rather than treating each as an isolated finding.
 * Demonstrate an end-to-end QA workflow from planning through execution and defect reporting.
 
 
@@ -58,16 +59,17 @@ The objectives of this testing project are to:
 
 Testing will cover the following functional and non-functional areas:
 
-| Area                   | Coverage                                       |
-| ---------------------- | ---------------------------------------------- |
-| Authentication         | Positive, negative, validation, locked account |
-| Product Inventory      | Listing, sorting, details, images, UI          |
-| Shopping Cart          | Add, remove, badge count, persistence          |
-| Checkout               | Form validation, overview, pricing, completion |
-| Session Management     | Logout, direct access, navigation              |
-| User-Specific Behavior | Functional, performance, error, visual         |
-| UI/Visual              | Layout, images, consistency                    |
-| Edge Cases             | Boundary and unexpected user interactions      |
+| Area                        | Coverage                                       |
+| --------------------------- | ---------------------------------------------- |
+| Authentication              | Positive, negative, validation, locked account |
+| Product Inventory           | Listing, sorting, details, images, UI          |
+| Shopping Cart               | Add, remove, badge count, persistence          |
+| Checkout                    | Form validation, overview, pricing, completion |
+| Session Management          | Logout, direct access, navigation              |
+| User-Specific Behavior      | Functional, performance, error, visual         |
+| UI/Visual                   | Layout, images, consistency                    |
+| Edge Cases                  | Boundary and unexpected user interactions      |
+| Cross-User Session Behavior | Cart isolation, session termination, data leakage between users |
 
 
 ## 5. Test Data
@@ -90,7 +92,9 @@ The predefined SauceDemo credentials/data will be used for testing rather than c
 
 Testing will follow a **risk-based functional testing approach**.
 
-Testing progresses from baseline positive scenarios to negative, edge-case, user-specific, UI/visual, performance, and session-management scenarios.
+Testing will cover fundamental positive scenarios as well as negative, edge-case, user-specific, UI/visual, performance, and session-management scenarios.
+Testing will also include state-transition scenarios (e.g., verifying application behavior across sequential actions such as cart modification, 
+checkout progression, and session changes) to validate business-rule enforcement beyond isolated actions.
 
 `standard_user` is used as the baseline for expected behavior, while the remaining predefined users are used to validate specific application conditions.
 
