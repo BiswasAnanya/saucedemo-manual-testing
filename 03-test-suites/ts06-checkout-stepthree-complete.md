@@ -14,3 +14,6 @@ The following test-cases validates order completion confirmation, navigation, ca
 | TC-608       | Verify Checkout Complete page cannot be accessed without checkout | Logged-in user with no completed order | N/A       | 1. Log in.<br>2. Navigate directly to `/checkout-complete.html`                | Application should prevent access and redirect or display an appropriate error | Page is accessible directly and displays **Thank you for your order!** without a completed order. | Failed      |
 | TC-609       | Verify browser Back does not return to completed checkout state   | Successfully completed order           | N/A       | 1. Complete an order.<br>2. Click **Back Home**.<br>3. Press browser **Back**. | User should not return to a stale completed-order state or resubmit the order  | Browser Back returns to the completed-order state, allowing the order to be resubmitted.          | Failed      |
 
+## Summary
+
+**Total Test Cases:** 9 | ✅ **Passed:** 7 | ❌ **Failed:** 2
