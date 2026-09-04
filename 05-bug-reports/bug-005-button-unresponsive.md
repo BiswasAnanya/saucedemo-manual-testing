@@ -1,4 +1,4 @@
-# BUG-005: Add to Cart Buttons Unresponsive for error_user
+# BUG-005: Add to Cart Buttons Unresponsive for `error_user`
 
 **Status:** Open
 
@@ -12,14 +12,15 @@
 
 ## Description
 
-Three of the six Add to Cart buttons are unresponsive when using error_user.
+Three of the six Add to Cart buttons are unresponsive when using `error_user`.
+
 
 ## Preconditions
 * Browser is open on the SauceDemo Login page.
 
 ## Steps to Reproduce
 
-1. Log in with error_user / secret_sauce.
+1. Log in with `error_user/secret_sauce`
 2. Navigate to the Inventory page.
 3. Scroll through the available products.
 4. Click each Add to Cart button.
