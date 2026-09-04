@@ -43,5 +43,5 @@ TBA
 
 The slowdown appears to be specific to `performance_glitch_user`. The application remains usable once the Inventory page finishes loading, but the additional delay is noticeable during the login flow.
 
-[Next Bug →](bug-002-incorrect-product-image.md)
+[Next Bug →](bug-002-incorrect-product-image-inventory.md)
 
