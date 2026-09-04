@@ -30,7 +30,7 @@ TBA
 | Test Summary          | 🔄 In progress      |
 | Playwright Automation | ⏳ Planned      |
 
-## QA Highlights
+## ⭐ QA Highlights
 
 * 82 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
 * 24 failures investigated and consolidated into 7 distinct defects.
