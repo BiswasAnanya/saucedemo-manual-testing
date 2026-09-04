@@ -39,3 +39,5 @@ Visual and UI inconsistencies are present on the Inventory page for `visual_user
 ## Notes
 
 This is primarily a visual/UI defect and does not prevent the user from continuing through the core shopping flow.
+
+[← Previous Bug](BUG-003.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](BUG-005.md)
