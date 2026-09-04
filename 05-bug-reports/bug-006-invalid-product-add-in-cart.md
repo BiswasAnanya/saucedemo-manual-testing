@@ -1,4 +1,4 @@
-# BUG-006: **Add to Cart** Option Remains Functional for Invalid Product
+# BUG-006: Invalid Product Causes Checkout to Become Unresponsive
 
 **Status:** Open
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-The invalid product page for product ID 123 displays a functional Add to Cart option. The nonexistent product can be added to the cart and the user can proceed through the checkout flow with it.
+An invalid product can be added to the cart from its Product Detail page. The user can then enter Checkout Step One, but proceeding to Checkout Step Two causes the checkout page to become blank and unresponsive.
 
 ## Preconditions
 
@@ -21,21 +21,28 @@ The invalid product page for product ID 123 displays a functional Add to Cart op
 
 ## Steps to Reproduce
 
-1. Open the invalid product page using product ID 123.
-2. Observe that an Add to Cart option is displayed.
-3. Click Add to Cart.
-4. Open the Cart.
-5. Verify that the invalid product has been added.
-6. Proceed to Checkout.
-7. Complete the required checkout information and continue through the checkout flow.
+1. Open the invalid product page using product ID `123`.
+2. Click **Add to Cart**.
+3. Open the Cart and verify that the invalid product has been added.
+4. Proceed to Checkout.
+5. Enter valid customer information on Checkout Step One.
+6. Click **Continue**.
+7. Observe Checkout Step Two.
+8. Attempt to navigate back using the browser Back button.
 
 ## Expected Result
 
-The invalid product page should not provide a functional Add to Cart option. A nonexistent product should not be added to the cart or be allowed to proceed through the checkout flow.
+The invalid product should not be added to the cart or allowed to proceed through the checkout flow.
+
+If an invalid product somehow reaches checkout, the application should handle the condition gracefully and keep the checkout flow functional.
 
 ## Actual Result
 
-The invalid product page displays a functional Add to Cart option. The nonexistent product is added to the cart, and the user can proceed through the checkout flow with it.
+The invalid product is added to the cart and the user can proceed to Checkout Step One.
+
+After entering valid customer information and clicking **Continue**, Checkout Step Two displays a blank page and becomes unresponsive. Using the browser Back button changes the URL, but the page remains blank and the application does not recover.
+
+The session can only be recovered by closing the browser or logging in again.
 
 ## Evidence
 
@@ -43,6 +50,7 @@ The invalid product page displays a functional Add to Cart option. The nonexiste
 
 ## Notes
 
-The defect affects the integrity of the shopping flow because a product that does not exist can be treated as a valid cart item and proceed to checkout.
+## The defect originates from allowing an invalid product to enter the cart, but the most severe impact occurs when the user reaches Checkout Step Two, where the application becomes effectively unusable for the current session.
+
 
 [← Previous Bug](bug-005-button-unresponsive.md)          [Next Bug →](bug-007-incorrect-product-shown-in-product-detail.md)
