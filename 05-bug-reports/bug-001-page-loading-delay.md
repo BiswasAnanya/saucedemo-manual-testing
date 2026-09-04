@@ -6,9 +6,9 @@
 
 **Priority:** P3
 
-**Related Test Case:** TC-008
+**Related Test-Case:** TC-008
 
-**Related Suite:** Authentication/Login
+**Related Test-Suite:** Authentication/Login
 
 ## Description
 
