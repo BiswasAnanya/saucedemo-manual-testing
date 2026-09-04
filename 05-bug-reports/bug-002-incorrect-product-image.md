@@ -41,4 +41,4 @@ Product images doesn't adhere/correspond with the mentioned products.
 
 The issue affects the accuracy of product information presented to the user.
 
-[← Previous Bug](BUG-001.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](BUG-003.md)
+[← Previous Bug](05-bug-reports/bug-001-page-loading-delay.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](05-bug-reports/bug-003-incorrect-product-image.md)
