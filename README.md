@@ -29,3 +29,13 @@ TBA
 | Defect Reporting      | 🔄 In progress |
 | Test Summary          | 🔄 In progress      |
 | Playwright Automation | ⏳ Planned      |
+
+## QA Highlights
+
+* 82 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
+* 24 failures investigated and consolidated into 7 distinct defects.
+* Re-tested unexpected behavior before reporting defects to avoid false positives.
+* Removed scenarios where expected behavior could not be justified by a requirement.
+* Consolidated duplicate observations into single defects.
+* Applied severity/priority based on actual user impact.
+* Documented downstream impact when defects affected later stages of the workflow.
