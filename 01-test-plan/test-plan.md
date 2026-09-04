@@ -34,8 +34,18 @@ The objectives of this testing project are to:
 * Analyze identified defects for common patterns or root causes across features, rather than treating each as an isolated finding.
 * Demonstrate an end-to-end QA workflow from planning through execution and defect reporting.
 
+## 3. Test Approach/Strategy
 
-## 3. Scope 
+Testing will follow a **risk-based functional testing approach**.
+
+Testing will cover fundamental positive scenarios as well as negative, edge-case, user-specific, UI/visual, performance, and session-management scenarios.
+Testing will also include state-transition scenarios (e.g., verifying application behavior across sequential actions such as cart modification, 
+checkout progression, and session changes) to validate business-rule enforcement beyond isolated actions.
+
+`standard_user` is used as the baseline for expected behavior, while the remaining predefined users are used to validate specific application conditions.
+
+
+## 4. Scope 
 
 ### In Scope
 
@@ -55,7 +65,7 @@ The objectives of this testing project are to:
 * Security/penetration testing
 
 
-## 4. Test Coverage
+## 5. Test Coverage
 
 Testing will cover the following functional and non-functional areas:
 
@@ -71,8 +81,26 @@ Testing will cover the following functional and non-functional areas:
 | Edge Cases                  | Boundary and unexpected user interactions      |
 | Cross-User Session Behavior | Cart isolation, session termination, data leakage between users |
 
+## 6. Test Entry and Exit Criteria
 
-## 5. Test Data
+### 6.1 Entry Criteria
+
+- Test Plan has been reviewed and finalized.
+- Manual test cases have been written and reviewed.
+- SauceDemo application (https://www.saucedemo.com) is accessible and stable.
+- Predefined test user credentials (standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user) are available and working.
+- Test environment (browser, OS) is set up and confirmed.
+
+### 6.2 Exit Criteria
+
+- All planned test cases have been executed.
+- All identified defects have been logged with appropriate severity/priority.
+- No open defects blocking the critical path (Login → Browse → Add to Cart → Checkout → Order Confirmation).
+- Test Execution Report and Test Summary have been completed.
+- Smoke suite passes successfully on the final build/version tested.
+
+
+## 7. Test Data
 
 The System under Test (SUT) provides predefined users with different behaviors. These users will be used to validate both baseline functionality and user-specific conditions.
 
@@ -88,18 +116,32 @@ The System under Test (SUT) provides predefined users with different behaviors. 
 The predefined SauceDemo credentials/data will be used for testing rather than creating custom application data.
 
 
-## 6. Test Approach/Strategy
+## 8. Test Pass/Fail Criteria
 
-Testing will follow a **risk-based functional testing approach**.
+- A test case is **Passed** when,  actual result matches the expected result for the test case.
+- A test case is **Failed** when, actual result deviates from the expected result, or a defect blocks core functionality (e.g., login, cart, checkout).
 
-Testing will cover fundamental positive scenarios as well as negative, edge-case, user-specific, UI/visual, performance, and session-management scenarios.
-Testing will also include state-transition scenarios (e.g., verifying application behavior across sequential actions such as cart modification, 
-checkout progression, and session changes) to validate business-rule enforcement beyond isolated actions.
+## 9. Defect Severity and Priority
 
-`standard_user` is used as the baseline for expected behavior, while the remaining predefined users are used to validate specific application conditions.
+### 9.1 Severity
 
+| Severity | Definition |
+|---|---|
+| Critical | Blocks critical application functionality or causes major application failure. |
+| High | Breaks major functionality but the application remains partially usable. |
+| Medium | Causes incorrect behavior or a significant usability/performance issue, but a workaround exists. |
+| Low | Minor functional, UI, or cosmetic issue with limited impact. |
 
-## 7. Smoke Test Criteria
+### 9.2 Priority
+
+| Priority | Definition |
+|---|---|
+| P1 | Requires immediate attention; blocks critical functionality or has major user impact. |
+| P2 | Should be addressed soon; affects important functionality or user experience. |
+| P3 | Can be addressed during normal development work. |
+| P4 | Low urgency; can be deferred until higher-priority defects are resolved. |
+
+## 10. Smoke Test Criteria
 
 The smoke suite focuses on critical functionality required for the primary customer journey:
 
@@ -108,31 +150,7 @@ The smoke suite focuses on critical functionality required for the primary custo
 The smoke suite will therefore prioritize verification of this critical path.
 Smoke testing will be used to determine whether the application is sufficiently stable for further testing after a build or deployment.
 
-## 8. Item Pass/Fail Criteria
-
-- A test case is **Passed** when,  actual result matches the expected result for the test case.
-- A test case is **Failed** when, actual result deviates from the expected result, or a defect blocks core functionality (e.g., login, cart, checkout).
-
-## 9. Entry and Exit Criteria
-
-### 9.1 Entry Criteria
-
-- Test Plan has been reviewed and finalized.
-- Manual test cases have been written and reviewed.
-- SauceDemo application (https://www.saucedemo.com) is accessible and stable.
-- Predefined test user credentials (standard_user, locked_out_user, problem_user, performance_glitch_user, error_user, visual_user) are available and working.
-- Test environment (browser, OS) is set up and confirmed.
-
-### 9.2 Exit Criteria
-
-- All planned test cases have been executed.
-- All identified defects have been logged with appropriate severity/priority.
-- No open defects blocking the critical path (Login → Browse → Add to Cart → Checkout → Order Confirmation).
-- Test Execution Report and Test Summary have been completed.
-- Smoke suite passes successfully on the final build/version tested.
-
-
-## 10. Deliverables
+## 11. Deliverables
 
 Deliverables that are planned for this project are in the following:
 
@@ -147,7 +165,7 @@ Deliverables that are planned for this project are in the following:
 **N. B:** The automation deliverables will be added as the project progresses.
 
 
-## 11. Notes
+## 12. Notes
 
 To keep this portfolio project focused and practical, the following formal test-plan portions are intentionally excluded from the current version:
 
