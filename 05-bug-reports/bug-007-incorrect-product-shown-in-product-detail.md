@@ -31,7 +31,7 @@ The Product Detail page should display the same product that was selected from t
 
 ## Actual Result
 
-The Product Detail page displays a different product instead of the selected **Sauce Labs Backpack**.
+The Product Detail page displays a different product instead of the selected **Sauce Labs Backpack**. The product information is also not associated.
 
 ## Evidence
 
