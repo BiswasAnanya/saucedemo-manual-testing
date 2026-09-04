@@ -42,3 +42,5 @@ The product order does not change when different sorting options are selected.
 ## Notes
 
 The sorting control remains available, but selecting different options does not produce the expected change in product order.
+
+[← Previous Bug](BUG-002.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](BUG-004.md)
