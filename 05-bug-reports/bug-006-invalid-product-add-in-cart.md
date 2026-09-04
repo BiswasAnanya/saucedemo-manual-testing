@@ -42,4 +42,4 @@ The invalid product page displays a functional **Add to Cart** option.
 
 The page correctly indicates that the requested product is invalid (doesn't exist in Inventory), but still exposes an actionable **Add to Cart** option.
 
-[← Previous Bug](bug-005-button-unresponsive.md)          [Next Bug →](BUG-007.md)
+[← Previous Bug](bug-005-button-unresponsive.md)          [Next Bug →](bug-007-incorrect-product-shown-in-product-detail.md)
