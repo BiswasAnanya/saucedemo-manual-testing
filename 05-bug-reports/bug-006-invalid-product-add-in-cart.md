@@ -50,7 +50,7 @@ The session can only be recovered by closing the browser or logging in again.
 
 ## Notes
 
-## The defect originates from allowing an invalid product to enter the cart, but the most severe impact occurs when the user reaches Checkout Step Two, where the application becomes effectively unusable for the current session.
+The defect originates from allowing an invalid product to enter the cart, but the most severe impact occurs when the user reaches Checkout Step Two, where the application becomes effectively unusable for the current session.
 
 
 [← Previous Bug](bug-005-button-unresponsive.md)          [Next Bug →](bug-007-incorrect-product-shown-in-product-detail.md)
