@@ -42,4 +42,4 @@ Three of the six Add to Cart buttons are unresponsive and do not add the corresp
 
 The issue affects half of the available products and prevents those products from being added to the cart through the Inventory page.
 
-[← Previous Bug](bug-004-layout-inconsistency.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-006-invalid-product-add-in-cart.md)
+[← Previous Bug](bug-004-inventory-layout-inconsistency.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-006-invalid-product-add-in-cart.md)
