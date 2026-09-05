@@ -39,7 +39,7 @@ Clicking the **About** link redirects the user to a **404 – Page Not Found** e
 
 ## Evidence
 
-![Bug evidence](../Screenshots/bug-017.png)
+![Bug evidence](../Screenshots/bug-018.png)
 
 ## Notes
 
@@ -47,4 +47,4 @@ The About link does not fulfill its intended navigation function because the con
 
 ---
 
-[← Previous Bug](bug-016-completed-order-resubmission.md)          [Next Bug →](bug-018.md)
+[← Previous Bug](bug-017-cross-user-cart-data-isolation.md)          [Next Bug →](bug-018.md)
