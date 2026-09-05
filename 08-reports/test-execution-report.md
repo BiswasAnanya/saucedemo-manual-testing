@@ -71,7 +71,23 @@ Several failures recur across multiple, otherwise unrelated suites, suggesting s
 
 ## Defect Summary
 
-Defect logging and severity classification are currently **in progress**. A full breakdown by severity (Critical/High/Medium/Low) will be added once the defect log is finalized; see `/defects` for individual bug reports as they are completed.
+A total of **22 test-case failures** were identified during execution. These failures resulted in **18 unique defects** being reported and documented in `/defects`.
+
+The remaining **4 failed test cases were duplicate manifestations or alternate entry points of defects already covered by existing bug tickets** and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases.
+
+### Severity Distribution
+
+| Severity  | Number of Defects | Percentage |
+| --------- | ----------------: | ---------: |
+| Critical  |                 1 |      5.56% |
+| High      |                 8 |     44.44% |
+| Medium    |                 7 |     38.89% |
+| Low       |                 2 |     11.11% |
+| **Total** |            **18** |   **100%** |
+
+Overall, **9 of the 18 reported defects (50.00%) are classified as Critical or High severity**, indicating that a significant portion of the identified defects has a substantial impact on core functionality, checkout processing, data isolation, or other important user workflows.
+
+See `/05-bug-reports` for the individual bug reports and supporting evidence.
 
 ## Final Assessment
 
