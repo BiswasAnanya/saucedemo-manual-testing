@@ -33,7 +33,7 @@ TBA
 ## ⭐ QA Highlights
 
 * 80 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
-* 22 failures investigated and consolidated into 6 distinct defect types.
+* 21 failures investigated and consolidated into 6 distinct defect types.
 * Re-tested unexpected behavior before reporting defects to avoid false positives.
 * Removed scenarios where expected behavior could not be justified by a requirement.
 * Consolidated duplicate observations into single defects.
