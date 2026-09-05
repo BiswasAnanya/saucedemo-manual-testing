@@ -1,4 +1,4 @@
-# BUG-007: Incorrect Product Displayed on Product Detail Page for `problem_user`
+# BUG-007: Incorrect Product Association for problem_user
 
 **Status:** Open
 
@@ -12,26 +12,30 @@
 
 ## Description
 
-The Product Detail page displays a different product from the one selected on the Inventory page when using `problem_user`.
+For `problem_user`, the application displays incorrect product information when selecting a product and carrying it through the shopping flow. The Product Detail page displays a different product than the one selected, and the incorrect product information is also reflected in the Cart.
 
 ## Preconditions
 
 * User is logged in as `problem_user`.
-* User is on the Inventory page.
+* Inventory page is displayed.
+* Cart is empty.
 
 ## Steps to Reproduce
 
-1. Log in with `problem_user` / `secret_sauce`.
-2. Open the **Sauce Labs Backpack** from the Inventory page.
-3. Verify the product displayed on the Product Detail page.
+1. Select **Sauce Labs Backpack** from the Inventory page.
+2. Observe the Product Detail page.
+3. Verify that the displayed product matches the selected product.
+4. Add the product to the cart.
+5. Open the Cart.
+6. Verify the product name and image.
 
 ## Expected Result
 
-The Product Detail page should display the same product that was selected from the Inventory page.
+The selected product should be displayed correctly on the Product Detail page and the same product, with the correct product information and image, should appear in the Cart.
 
 ## Actual Result
 
-The Product Detail page displays a different product instead of the selected **Sauce Labs Backpack**. 
+A different product is displayed on the Product Detail page instead of the selected **Sauce Labs Backpack**. The incorrect product information/image is also reflected in the Cart.
 
 ## Evidence
 
@@ -39,6 +43,8 @@ The Product Detail page displays a different product instead of the selected **S
 
 ## Notes
 
-The incorrect product association can cause users to view or purchase a product different from the one they originally selected.
+The defect affects product identification across multiple stages of the shopping flow and may result in the user viewing or purchasing a different product than the one originally selected.
+
+---
 
 [← Previous Bug](bug-006-invalid-product-add-in-cart.md)          [Next Bug →](bug-008-incorrect-product-info-in-cart.md)
