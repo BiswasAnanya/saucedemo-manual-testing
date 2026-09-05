@@ -56,4 +56,4 @@ Those defects concern accessing protected checkout states without satisfying the
 
 ---
 
-[← Previous Bug](bug-015-checkout-complete-direct-access.md)          [Next Bug →](bug-017.md)
+[← Previous Bug](bug-015-checkout-complete-direct-access.md)          [Next Bug →](bug-017-cross-user-cart-data-isolation.md)
