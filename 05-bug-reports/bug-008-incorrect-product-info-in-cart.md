@@ -40,7 +40,7 @@ Product information and/or the product image is incorrectly associated with the 
 
 ## Notes
 
-This defect is related to [BUG-007](bug-007-incorrect-product-shown-in-product-detail.md), which reports incorrect product information on the Product Detail page for problem_user. 
+This defect is related to [BUG-007](bug-007-incorrect-product-image-in-detail.md), which reports incorrect product information on the Product Detail page for problem_user. 
 The two defects may share the same underlying product-association or product-mapping issue, as the incorrect product information appears both on the Product Detail page and in the Cart.
 However, the defects are reported separately because they were observed in different application areas:
 
@@ -52,4 +52,4 @@ Further investigation is required to confirm whether both issues have the same r
 
 ---
 
-[← Previous Bug](bug-007-incorrect-product-shown-in-product-detail.md)          [Next Bug →](BUG-009.md)
+[← Previous Bug](bug-007-incorrect-product-image-in-detail.md)          [Next Bug →](BUG-009.md)
