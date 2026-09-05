@@ -43,4 +43,5 @@ Visual/UI inconsistencies are present on the Cart page for `visual_user`. The ca
 Although this defect is similar in nature to BUG-004, the two defects affect different pages of the application. BUG-004 concerns the Inventory page, while BUG-009 concerns the Cart page. 
 Tracking them separately provides clearer defect coverage and makes it easier to identify which page is affected.
 
+---
 [← Previous Bug](bug-008-remove-button-unresponsive.md)          [Next Bug →](bug-010-checkout-with-empty-cart.md)
