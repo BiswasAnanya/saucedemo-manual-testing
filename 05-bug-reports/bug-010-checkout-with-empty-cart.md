@@ -51,5 +51,5 @@ TC-309 verifies this through the normal checkout flow, while TC-408 verifies the
 
 ---
 
-[← Previous Bug](bug-009-cart-layout-inconsistency.md)          [Next Bug →](bug-011.md)
+[← Previous Bug](bug-009-cart-layout-inconsistency.md)          [Next Bug →](bug-011-last-name-field-unresponsive.md)
 
