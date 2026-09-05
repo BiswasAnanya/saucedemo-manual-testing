@@ -57,4 +57,4 @@ The defect may expose one user's shopping state to another user and could potent
 
 ---
 
-[← Previous Bug](bug-016-completed-order-resubmission.md)          [Next Bug →](bug-018.md)
+[← Previous Bug](bug-016-completed-order-resubmission.md)          [Next Bug →](bug-018-about-link-404.md)
