@@ -36,7 +36,7 @@ Visual/UI inconsistencies are present on the Cart page for `visual_user`. The ca
 
 ## Evidence
 
-TBA
+![Bug evidence](../Screenshots/bug-009.png)
 
 ## Notes
 
