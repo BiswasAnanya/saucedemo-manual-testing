@@ -1,4 +1,4 @@
-# BUG-008: Remove Button Unresponsive for `error_user`
+# BUG-008: Remove Button Unresponsive for `error_user` and `problem_user`
 
 **Status:** Open
 
@@ -12,11 +12,11 @@
 
 ## Description
 
-For `error_user`, the **Remove** button does not respond when attempting to remove a product from the cart from the Inventory page.
+For `error_user` and `problem_user`, the **Remove** button does not respond when attempting to remove a product from the cart from the Inventory page.
 
 ## Preconditions
 
-* User is logged in as `error_user`.
+* User is logged in as `error_user` or `problem_user`
 * Inventory page is displayed.
 * Cart is empty.
 
@@ -26,6 +26,7 @@ For `error_user`, the **Remove** button does not respond when attempting to remo
 2. Remain on the Inventory page.
 3. Click **Remove** for the selected product.
 4. Observe the cart badge and product state.
+5. Repeat the same steps for `problem_user`.
 
 ## Expected Result
 
@@ -41,7 +42,8 @@ The **Remove** button is unresponsive. The product remains in the cart, and the 
 
 ## Notes
 
-The defect prevents the user from removing the selected product through the Inventory page.
+Users cannot remove products directly from the Product Details page, forcing them to navigate to another page or preventing item removal entirely. 
+This negatively impacts core shopping cart functionality and user experience.
 
 ---
 
