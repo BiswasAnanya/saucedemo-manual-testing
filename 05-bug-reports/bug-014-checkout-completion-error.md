@@ -6,7 +6,7 @@
 
 **Priority:** P2
 
-**Related Test-Case:** TC-513
+**Related Test-Case:** TC-512
 
 **Related Test-Suite:** Checkout: Step Two (Overview)
 
