@@ -6,7 +6,7 @@
 
 **Priority:** P2
 
-**Related Test-Cases:** TC-210, TC-305
+**Related Test-Cases:** TC-210, TC-305, TC-512
 
 **Related Test-Suites:** Product Detail, Shopping Cart
 
