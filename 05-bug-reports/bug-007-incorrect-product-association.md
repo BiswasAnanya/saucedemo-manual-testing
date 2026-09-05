@@ -47,4 +47,4 @@ The defect affects product identification across multiple stages of the shopping
 
 ---
 
-[← Previous Bug](bug-006-invalid-product-add-in-cart.md)          [Next Bug →](bug-008-incorrect-product-info-in-cart.md)
+[← Previous Bug](bug-006-invalid-product-add-in-cart.md)          [Next Bug →](bug-008-remove-button-unresponsive.md)
