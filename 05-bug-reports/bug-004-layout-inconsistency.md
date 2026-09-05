@@ -40,4 +40,4 @@ Visual and UI inconsistencies are present on the Inventory page for `visual_user
 
 This is primarily a visual/UI defect and does not prevent the user from continuing through the core shopping flow.
 
-[← Previous Bug](bug-003-product-sorting-issue.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-005-button-unresponsive.md)
+[← Previous Bug](bug-003-product-sorting-issue.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-005-add-to-cart-button-unresponsive.md)
