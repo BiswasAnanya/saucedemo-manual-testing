@@ -41,9 +41,10 @@ A different product is displayed on the Product Detail page instead of the selec
 
 ![Bug evidence](../Screenshots/bug-007.png)
 
+
 ## Notes
 
-The defect affects product identification across multiple stages of the shopping flow and may result in the user viewing or purchasing a different product than the one originally selected.
+This defect represents the downstream manifestation of the product information/image mismatch originally observed in [BUG-002](bug-002-incorrect-product-image-inventory.md). TC-210, TC-305, and TC-512 verify that the same incorrect product association persists across Product Detail, Shopping Cart, and Checkout Overview. These test cases are therefore tracked under BUG-007 rather than logged as separate defects.
 
 ---
 
