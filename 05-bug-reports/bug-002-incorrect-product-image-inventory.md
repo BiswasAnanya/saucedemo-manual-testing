@@ -39,6 +39,6 @@ Product images doesn't adhere/correspond with the mentioned products.
 
 ## Notes
 
-The issue affects the accuracy of product information presented to the user.
+This defect is first observed on the Inventory page for `problem_user`. The incorrect product information/image association originates at this stage and is subsequently carried through later stages of the shopping workflow. Downstream manifestations are covered by [BUG-007](bug-007-incorrect-product-association.md)
 
 [← Previous Bug](bug-001-page-loading-delay.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-003-product-sorting-issue.md)
