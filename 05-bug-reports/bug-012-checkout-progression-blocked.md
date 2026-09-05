@@ -56,4 +56,4 @@ The two defects share the same root cause but are tracked separately because the
 
 ---
 
-[← Previous Bug](bug-011-last-name-field-unresponsive.md)          [Next Bug →](bug-013.md)
+[← Previous Bug](bug-011-last-name-field-unresponsive.md)          [Next Bug →](bug-013-direct-checkout-step-two.md)
