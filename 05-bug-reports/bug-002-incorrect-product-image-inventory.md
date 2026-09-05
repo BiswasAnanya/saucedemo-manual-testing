@@ -12,7 +12,7 @@
 
 ## Description
 
-Product images doesn't adhere with products when using `problem_user`. The displayed image does not consistently match the corresponding product name.
+Product images doesn't adhere with products when using `problem_user`. The displayed image does not consistently match the corresponding product name. Rather every product displayed on the Inventory page uses the same image, regardless of the actual product. 
 
 ## Preconditions
 
@@ -27,11 +27,19 @@ Product images doesn't adhere with products when using `problem_user`. The displ
 
 ## Expected Result
 
-Each product should display its correct corresponding image.
+Each product should display its correct corresponding image. 
+
+Example:
+
+* Sauce Labs Backpack → Backpack image
+* Sauce Labs Bike Light → Bike Light image
+* Sauce Labs Bolt T-Shirt → T-Shirt image
+* Sauce Labs Onesie → Onesie image
 
 ## Actual Result
 
-Product images doesn't adhere/correspond with the mentioned products.
+Product images doesn't adhere/correspond with the mentioned products. 
+Although product names, descriptions, prices, and buttons are correct, every product card uses an identical image.
 
 ## Evidence
 
@@ -39,6 +47,6 @@ Product images doesn't adhere/correspond with the mentioned products.
 
 ## Notes
 
-This defect is first observed on the Inventory page for `problem_user`. The incorrect product information/image association originates at this stage and is subsequently carried through later stages of the shopping workflow. Downstream manifestations are covered by [BUG-007](bug-007-incorrect-product-association.md)
+This defect is first observed on the Inventory page for `problem_user`. This defect can make the user select a wrong product and go forward with the order and checkout process, resulting into negative user-experience. The incorrect product information/image association originates at this stage and is subsequently carried through later stages of the shopping workflow. Downstream manifestations are covered by [BUG-007](bug-007-incorrect-product-association.md)
 
 [← Previous Bug](bug-001-page-loading-delay.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Next Bug →](bug-003-product-sorting-issue.md)
