@@ -23,7 +23,7 @@ TBA
 | Activity              | Status         |
 | --------------------- | -------------- |
 | Test Plan             | ✅ Completed    |
-| Test Cases            | ✅ 80 completed |
+| Test Cases            | ✅ Completed |
 | Smoke Suite           | ✅ Completed    |
 | Manual Execution      | ✅ Completed |
 | Defect Reporting      | 🔄 In progress |
