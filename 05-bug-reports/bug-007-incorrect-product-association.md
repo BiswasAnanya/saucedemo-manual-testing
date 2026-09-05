@@ -8,7 +8,7 @@
 
 **Related Test-Cases:** TC-210, TC-305
 
-**Related Test-Suite:** Product Detail
+**Related Test-Suites:** Product Detail, Shopping Cart
 
 ## Description
 
