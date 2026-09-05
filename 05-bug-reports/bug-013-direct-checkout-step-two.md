@@ -55,4 +55,4 @@ The defects share the same underlying state-validation weakness but are tracked 
 
 ---
 
-[← Previous Bug](bug-012-checkout-progression-blocked.md)          [Next Bug →](bug-014.md)
+[← Previous Bug](bug-012-checkout-progression-blocked.md)          [Next Bug →](bug-014-checkout-completion-error.md)
