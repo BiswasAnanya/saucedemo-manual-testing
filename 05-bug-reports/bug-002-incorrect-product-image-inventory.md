@@ -6,7 +6,7 @@
 
 **Priority:** P2
 
-**Related Test-Case:** TC-107
+**Related Test-Cases:** TC-107
 
 **Related Test-Suite:** Product Inventory
 
