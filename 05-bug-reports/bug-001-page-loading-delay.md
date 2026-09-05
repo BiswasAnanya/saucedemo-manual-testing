@@ -8,7 +8,7 @@
 
 **Related Test-Cases:** TC-008, TC-110
 
-**Related Test-Suite:** Authentication/Login
+**Related Test-Suite:** Authentication/Login, Product Inventory
 
 ## Description
 
