@@ -60,4 +60,4 @@ Although both defects affect `error_user`, they involve different application fu
 
 ---
 
-[← Previous Bug](bug-013-direct-checkout-step-two.md)          [Next Bug →](bug-015.md)
+[← Previous Bug](bug-013-direct-checkout-step-two.md)          [Next Bug →](bug-015-checkout-complete-direct-access.md)
