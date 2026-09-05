@@ -21,14 +21,14 @@ This Test Execution Report summarizes the results of manual functional testing p
 | Test Suite                                | Total Test Cases | Passed | Failed |  Pass Rate |  Fail Rate | Overall Status          |
 | ----------------------------------------- | ---------------: | -----: | -----: | ---------: | ---------: | ----------------------- |
 | Authentication/Login                      |               11 |     10 |      1 |     90.91% |      9.09% | ⚠️ Partially Passed     |
-| Product Inventory                         |               11 |      6 |      5 |     54.55% |     45.45% | ⚠️ Partially Passed     |
+| Product Inventory                         |               12 |      6 |      6 |     50.00% |     50.00% | ⚠️ Partially Passed     |
 | Shopping Cart                             |                9 |      4 |      5 |     44.44% |     55.56% | ⚠️ Partially Passed     |
 | Product Detail                            |               10 |      8 |      2 |     80.00% |     20.00% | ⚠️ Partially Passed     |
 | Checkout: Step One (Customer Information) |                8 |      5 |      3 |     62.50% |     37.50% | ⚠️ Partially Passed     |
 | Checkout: Step Two (Overview)             |               12 |     10 |      2 |     83.33% |     16.67% | ⚠️ Partially Passed     |
 | Checkout: Complete                        |                9 |      7 |      2 |     77.78% |     22.22% | ⚠️ Partially Passed     |
 | Logout/Session Handling                   |                9 |      8 |      1 |     88.89% |     11.11% | ⚠️ Partially Passed     |
-| **Overall**                               |           **79** | **58** | **21** | **73.42%** | **26.58%** | **⚠️ Partially Passed** |
+| **Overall**                               |           **80** | **58** | **22** | **72.50%** | **27.50%** | **⚠️ Partially Passed** |
 
 ## Key Execution Findings
 
@@ -45,7 +45,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 
 ## Overall Execution Summary
 
-The SauceDemo test execution achieved a 73.42% pass rate, with 58 of 79 test cases passing and 21 failing across the eight test suites.
+The SauceDemo test execution achieved a **72.50%** pass rate, with 58 of 80 test cases passing and 22 failing across the eight test suites.
 
 The identified failures cover several areas, including:
 
@@ -58,7 +58,7 @@ The identified failures cover several areas, including:
 * Checkout state management
 * Session and cart data isolation
 
-The Shopping Cart suite has the highest failure rate at 55.56%, followed by Product Inventory at 45.45% and Checkout: Step One at 37.50%.
+The Shopping Cart suite has the highest failure rate at 55.56%, followed by Product Inventory at 50.00%  and Checkout: Step One at 37.50%.
 
 The Authentication/Login suite achieved the highest pass rate at 90.91%, with only one failed test case related to direct access to the Inventory page without authentication.
 
