@@ -1,4 +1,4 @@
-# BUG-015: `error_user` Cannot Complete Checkout from Overview
+# BUG-014: `error_user` Cannot Complete Checkout from Overview
 
 **Status:** Open
 
