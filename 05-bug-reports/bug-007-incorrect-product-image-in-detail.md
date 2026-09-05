@@ -41,4 +41,4 @@ The Product Detail page displays a different product instead of the selected **S
 
 The incorrect product association can cause users to view or purchase a product different from the one they originally selected.
 
-[← Previous Bug](bug-006-invalid-product-add-in-cart.md)          [Next Bug →](BUG-008.md)
+[← Previous Bug](bug-006-invalid-product-add-in-cart.md)          [Next Bug →](bug-008-incorrect-product-info-in-cart.md)
