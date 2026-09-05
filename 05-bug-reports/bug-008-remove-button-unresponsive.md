@@ -1,4 +1,4 @@
-# BUG-008: Remove Button Unresponsive for error_user
+# BUG-008: Remove Button Unresponsive for `error_user`
 
 **Status:** Open
 
@@ -45,4 +45,4 @@ The defect prevents the user from removing the selected product through the Inve
 
 ---
 
-[← Previous Bug](bug-007-incorrect-product-association.md)          [Next Bug →](placeholder.md)
+[← Previous Bug](bug-007-incorrect-product-association.md)          [Next Bug →](bug-009-cart-layout-inconsistency.md)
