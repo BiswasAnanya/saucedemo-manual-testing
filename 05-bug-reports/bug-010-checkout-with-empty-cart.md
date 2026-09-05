@@ -6,9 +6,9 @@
 
 **Priority:** P2
 
-**Related Test-Case:** TC-309
+**Related Test-Case:** TC-309, TC-408
 
-**Related Test-Suite:** Shopping Cart
+**Related Test-Suite:** Shopping Cart, Checkout: Step One
 
 ## Description
 
@@ -40,6 +40,13 @@ The user can proceed to the **Checkout** page even though the cart is empty.
 ## Evidence
 
 ![Bug evidence](../Screenshots/bug-010.png)
+
+## Note
+
+## Notes
+
+This defect also covers **TC-408**, which verifies direct URL access to Checkout Step One when the cart is empty. Both TC-309 and TC-408 identify the same underlying issue: the application allows the user to reach the checkout flow without a product in the cart. 
+TC-309 verifies this through the normal checkout flow, while TC-408 verifies the same issue through direct URL access. Therefore, both test cases are tracked under BUG-010 rather than logged as separate defects.
 
 
 ---
