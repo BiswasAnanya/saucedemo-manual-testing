@@ -8,7 +8,7 @@
 
 **Related Test-Cases:** TC-111, TC-306
 
-**Related Test-Suite:** Product Inventory
+**Related Test-Suite:** Product Inventory, Shopping Cart
 
 ## Description
 
