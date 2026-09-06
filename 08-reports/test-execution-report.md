@@ -39,7 +39,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 | Shopping Cart           | Core cart functionality passed, but multiple special-user and empty-cart scenarios failed.                                             |
 | Product Detail          | Most product detail functionality passed, with failures identified for invalid product handling and `problem_user` behavior.           |
 | Checkout Step One       | Basic checkout functionality passed, while `problem_user` field interaction and checkout progression issues were identified.           |
-| Checkout Step Two       | Most overview functionality passed, with failures related to direct page access, `problem_user`, and `error_user` checkout completion. |
+| Checkout Step Two       | Most overview functionality passed, with failures related to direct page access and error_user checkout completion.                    |
 | Checkout Complete       | Order completion and confirmation functionality passed, while direct access and browser Back behavior exposed state-management issues. |
 | Logout/Session Handling | Core logout and session protection scenarios passed, while cross-user cart isolation failed.                                           |
 
@@ -64,16 +64,16 @@ The Authentication/Login suite achieved the highest pass rate at 90.91%, with on
 
 ## Cross-Cutting Observations
 
-Several failures recur across multiple, otherwise unrelated suites, suggesting shared root causes rather than isolated defects:
+Several failures recur across multiple suites, indicating related behavioral patterns rather than isolated test-case failures:
 
 * **Checkout flow state-validation bypass** – observed at multiple entry points, including checkout initiation with an empty cart and direct access to checkout pages, indicating that the application does not consistently enforce checkout sequence prerequisites.
-* **`problem_user` product data/image mismatch** – observed consistently across Product Inventory, Product Detail, Shopping Cart, and Checkout Step Two.
+* **problem_user product data/image mismatch** – observed consistently across Product Inventory, Product Detail, and Shopping Cart.
 
 ## Defect Summary
 
 A total of **22 test-case failures** were identified during execution. These failures resulted in **18 unique defects** being reported and documented in `/defects`.
 
-The remaining **4 failed test cases were duplicate manifestations or alternate entry points of defects already covered by existing bug tickets** and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases.
+The remaining **4 failed test cases were duplicate manifestations or alternate entry points of existing defects** and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases.
 
 ### Severity Distribution
 
@@ -93,6 +93,6 @@ See `/05-bug-reports` for the individual bug reports and supporting evidence.
 
 **Overall Status: ⚠️ Partially Passed**
 
-The test execution demonstrates that the core SauceDemo e-commerce workflows are functional, but several defects remain across special-user behavior, field handling, cart functionality, checkout state management, and session isolation.
+The test execution demonstrates that the primary SauceDemo e-commerce workflows are generally functional, but several defects remain across special-user behavior, field handling, cart functionality, checkout state management, and session isolation.
 
 The results provide a clear basis for defect reporting, regression testing, and future automation coverage.
