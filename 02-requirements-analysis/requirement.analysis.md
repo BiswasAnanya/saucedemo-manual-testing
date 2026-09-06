@@ -1,16 +1,14 @@
 # Requirement Analysis – SauceDemo
 
-## Purpose and Approach
+## Purpose 
 
 The purpose of this requirements analysis is to establish a clear and testable understanding of the expected behavior of the SauceDemo application before test design and execution.
 
-Because SauceDemo does not provide formal business or functional requirements, the requirements were reverse-engineered from the application's observed behavior and user workflows. The analysis identifies the key functional requirements, business rules, validation rules, navigation behavior, and expected system responses across the main e-commerce workflows.
-
-Each identified requirement was analyzed and converted into testable conditions. The resulting requirements were then mapped to test cases to establish traceability between application functionality and QA coverage.
+Because SauceDemo does not provide formal requirements, the requirements were reverse-engineered from observed application behavior and user workflows. They define the key functional requirements, business rules, validation rules, navigation behavior, and expected system responses, and serve as the basis for test case design and traceability.
 
 ## Application Overview
 
-SauceDemo (Swag Labs) is a sample e-commerce web application used for QA practice. It covers core online shopping workflows — login, product browsing, cart management, checkout, and logout — along with a set of predefined users that simulate different application behaviors (e.g., `problem_user`, `error_user`, `performance_glitch_user`).
+SauceDemo (Swag Labs) is a sample e-commerce application covering login, product browsing, cart management, checkout, and logout. Predefined users simulate different application behaviors, including problem_user, error_user, performance_glitch_user, and visual_user.
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
@@ -137,11 +135,9 @@ The system shall gracefully handle access to invalid or non-existent products an
 The system shall allow users to add one or more products to the cart, updating the button state and cart badge accordingly.
 
 **Acceptance Criteria:**
-- Adding a single product updates button and badge to 1
-- Adding multiple products updates badge to 3
-- Adding all products updates badge to 6
-- Correct product/image added for `problem_user`
-- All products can be added for `error_user`
+- Single, multiple, and all products can be added with the cart badge updating correctly.
+- Product data and image are correct for `problem_user`.
+- All products can be added for `error_user`.
 
 ### REQ-CART-02: Remove Products from Cart
 
@@ -323,15 +319,13 @@ This project's test design used SauceDemo's predefined special users (`problem_u
 | Usability / Responsiveness | REQ-INV-06, REQ-CART-01, REQ-CART-02, REQ-CKT2-05 | Unresponsive UI elements (buttons, links) for `error_user` |
 | UI / Visual Consistency | REQ-INV-04, REQ-CART-03 | Layout and alignment inconsistencies for `visual_user` |
 
+
 ### Out of Scope
 
-The following non-functional areas were not evaluated as part of this project:
-
-* **Compatibility** — testing was limited to Chrome on a single OS; no cross-browser or cross-device testing was performed.
-* **Load/Performance testing** — no dedicated load-testing tools were used; performance observations above are limited to manual, single-user page-load observation.
+- **Compatibility** — No cross-browser or cross-device testing was performed.
+- **Load/Performance testing** — Performance observations were limited to manual, single-user page-load checks.
 
 ## Assumptions
 
-* SauceDemo does not provide official requirement documentation; all requirements in this document were reverse-engineered from observed application behavior rather than derived from a formal specification.
-* Where application behavior was ambiguous or inconsistent (e.g., special-user quirks), the requirement was written to reflect the intended/expected behavior for standard usage, with deviations treated as defects rather than alternate valid requirements.
-* Requirements reflect the application's behavior as observed in July 2026 and may not account for later changes to the live site.
+- SauceDemo does not provide official requirement documentation; requirements were reverse-engineered from observed application behavior.
+- Where behavior was ambiguous or inconsistent, requirements reflect the intended behavior for standard usage, with deviations treated as defects. Requirements reflect observations made in July 2026 and may not account for later changes to the live site.
