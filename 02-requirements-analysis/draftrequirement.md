@@ -1,21 +1,5 @@
 # Requirement Analysis – SauceDemo
 
-## Table of Contents
-- [Purpose](#purpose)
-- [Application Overview](#application-overview)
-- [Authentication / Login](#authentication--login)
-- [Product Inventory](#product-inventory)
-- [Product Detail](#product-detail)
-- [Shopping Cart](#shopping-cart)
-- [Checkout Step One (Customer Information)](#checkout-step-one-customer-information)
-- [Checkout Step Two (Overview)](#checkout-step-two-overview)
-- [Checkout Complete](#checkout-complete)
-- [Logout & Session Management](#logout--session-management)
-- [Non-Functional Observations](#non-functional-observations)
-- [Out of Scope](#out-of-scope)
-- [Assumptions](#assumptions)
-
----
 
 ## Purpose
 
