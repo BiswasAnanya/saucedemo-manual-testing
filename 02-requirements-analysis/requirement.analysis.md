@@ -369,8 +369,6 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 ## 5. Non-Functional Requirements
 
-## 5. Non-Functional Observations
-
 This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here — a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
 
 | Category | Related Functional Requirement(s) | Observation |
@@ -386,8 +384,8 @@ The following non-functional areas were not evaluated as part of this project:
 - **Compatibility** — testing was limited to Chrome on a single OS; no cross-browser or cross-device testing was performed.
 - **Load/Performance testing** — no dedicated load-testing tools were used; performance observations above are limited to manual, single-user page-load observation.
 
-## 6. Assumptions and Limitations
+## 6. Assumptions
 
-- [Placeholder]
-- [Placeholder]
-- [Placeholder]
+- SauceDemo does not provide official requirement documentation; all requirements in this document were reverse-engineered from observed application behavior rather than derived from a formal specification.
+- Where application behavior was ambiguous or inconsistent (e.g., special-user quirks), the requirement was written to reflect the intended/expected behavior for standard usage, with deviations treated as defects rather than alternate valid requirements.
+- Requirements reflect the application's behavior as observed in July 2026 and may not account for later changes to the live site.
