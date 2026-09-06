@@ -293,16 +293,98 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 - AC-2: Cancel returns to Inventory with cart unchanged (TC-511)
 - AC-3: Order completion succeeds for `error_user` (TC-512)
 
+# Requirement Analysis – Checkout Complete
 
+## REQ-CKTC-01: Checkout Complete Page Display
+
+**Description:** The system shall display the Checkout Complete page with the correct title, confirmation message, and navigation elements after order completion.
+
+**Acceptance Criteria:**
+- AC-1: Page loads with correct title after Finish (TC-601)
+- AC-2: Confirmation message is displayed (TC-602)
+- AC-3: Confirmation sub-text is displayed (TC-603)
+- AC-4: Back Home button is visible (TC-604)
+
+---
+
+## REQ-CKTC-02: Post-Order Navigation
+
+**Description:** The system shall allow users to return to the Inventory page after order completion via the Back Home button.
+
+**Acceptance Criteria:**
+- AC-1: Back Home navigates to Inventory page (TC-605)
+
+---
+
+## REQ-CKTC-03: Cart Clearing After Order Completion
+
+**Description:** The system shall clear all cart contents once an order is completed.
+
+**Acceptance Criteria:**
+- AC-1: Cart is empty and badge is hidden after completion (TC-606)
+- AC-2: Cart remains empty with no previous items on re-check (TC-607)
+
+---
+
+## REQ-CKTC-04: Checkout Completion Access Control
+
+**Description:** The system shall prevent access to the Checkout Complete page, and prevent order resubmission, outside of a valid completed-checkout flow.
+
+**Acceptance Criteria:**
+- AC-1: Direct URL access without a completed order is blocked (TC-608)
+- AC-2: Browser Back does not return to a resubmittable completed-order state (TC-609)
+
+# Requirement Analysis – Logout & Session Management
+
+## REQ-SESS-01: Logout Functionality
+
+**Description:** The system shall provide a visible and functional logout option that terminates the user's session and returns them to the Login page.
+
+**Acceptance Criteria:**
+- AC-1: Logout option is visible in the navigation menu (TC-701)
+- AC-2: Clicking Logout logs the user out and redirects to Login page (TC-702)
+- AC-3: Login page is displayed correctly after logout (TC-707)
+
+---
+
+## REQ-SESS-02: Session Termination & Page Protection
+
+**Description:** The system shall fully terminate the session on logout and prevent access to any previously authenticated page.
+
+**Acceptance Criteria:**
+- AC-1: Inventory page is inaccessible via direct URL after logout (TC-703)
+- AC-2: Browser Back does not restore access to Inventory after logout (TC-704)
+- AC-3: Checkout page is inaccessible after logout (TC-705)
+- AC-4: No previously authenticated pages remain accessible after logout (TC-706)
+
+---
+
+## REQ-SESS-03: Cart Persistence & Isolation
+
+**Description:** The system shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session.
+
+**Acceptance Criteria:**
+- AC-1: Cart items persist for the same user after logout/login (TC-708)
+- AC-2: Cart data is isolated between different user sessions (TC-709)
 
 ## 5. Non-Functional Requirements
 
-| Requirement ID | Category | Requirement | Priority | Source / Observation |
-|---|---|---|---|---|
-| NFR-001 | Performance | | | |
-| NFR-002 | Usability | | | |
-| NFR-003 | UI / Visual | | | |
-| NFR-004 | Compatibility | | | |
+## 5. Non-Functional Observations
+
+This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here — a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
+
+| Category | Related Functional Requirement(s) | Observation |
+|---|---|---|
+| Performance | REQ-AUTH-02, REQ-INV-05 | Noticeable load-time delay for `performance_glitch_user` |
+| Usability / Responsiveness | REQ-INV-06, REQ-CART-01, REQ-CART-02, REQ-CKT2-05 | Unresponsive UI elements (buttons, links) for `error_user` |
+| UI / Visual Consistency | REQ-INV-04, REQ-CART-03 | Layout and alignment inconsistencies for `visual_user` |
+
+### Out of Scope
+
+The following non-functional areas were not evaluated as part of this project:
+
+- **Compatibility** — testing was limited to Chrome on a single OS; no cross-browser or cross-device testing was performed.
+- **Load/Performance testing** — no dedicated load-testing tools were used; performance observations above are limited to manual, single-user page-load observation.
 
 ## 6. Assumptions and Limitations
 
