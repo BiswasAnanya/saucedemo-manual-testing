@@ -241,6 +241,60 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 - AC-1: Direct URL access is blocked when cart is empty (TC-408)
 
 
+# Requirement Analysis – Checkout Step Two (Overview)
+
+## REQ-CKT2-01: Checkout Overview Page Access
+
+**Description:** The system shall display the Checkout Overview page only after valid customer information has been submitted, and shall block direct access when the cart is empty.
+
+**Acceptance Criteria:**
+- AC-1: Overview page loads after valid Step One submission (TC-501)
+- AC-2: Direct URL access is blocked when cart is empty (TC-502)
+
+---
+
+## REQ-CKT2-02: Cart Item Accuracy on Overview
+
+**Description:** The system shall accurately display all cart items, their details, and quantities on the Overview page.
+
+**Acceptance Criteria:**
+- AC-1: All cart items are listed with correct details (TC-503)
+- AC-2: Item details match what was added to cart (TC-504)
+- AC-3: Item quantity is displayed correctly (TC-505)
+
+---
+
+## REQ-CKT2-03: Payment & Shipping Information Display
+
+**Description:** The system shall display dummy payment and shipping information on the Overview page.
+
+**Acceptance Criteria:**
+- AC-1: Payment Information section is displayed (TC-506)
+- AC-2: Shipping Information section is displayed (TC-507)
+
+---
+
+## REQ-CKT2-04: Order Total Calculation
+
+**Description:** The system shall correctly calculate and display the item total, tax, and overall total.
+
+**Acceptance Criteria:**
+- AC-1: Price Total section is displayed (TC-508)
+- AC-2: Item Total equals the exact sum of item prices (TC-509)
+
+---
+
+## REQ-CKT2-05: Order Completion & Cancellation
+
+**Description:** The system shall allow users to complete or cancel the order from the Overview page.
+
+**Acceptance Criteria:**
+- AC-1: Finish completes the order and navigates to confirmation (TC-510)
+- AC-2: Cancel returns to Inventory with cart unchanged (TC-511)
+- AC-3: Order completion succeeds for `error_user` (TC-512)
+
+
+
 ## 5. Non-Functional Requirements
 
 | Requirement ID | Category | Requirement | Priority | Source / Observation |
