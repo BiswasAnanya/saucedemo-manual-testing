@@ -26,7 +26,8 @@ TBA
 | Test Cases            | ✅ Completed |
 | Smoke Suite           | ✅ Completed    |
 | Manual Execution      | ✅ Completed |
-| Defect Reporting      | 🔄 In progress |
+| Defect Reporting      | ✅ Completed |
+| RTM      | 🔄 In progress |
 | Test Summary          | 🔄 In progress      |
 | Playwright Automation | ⏳ Planned      |
 
