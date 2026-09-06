@@ -1,4 +1,4 @@
-# BUG-017: About Link Redirects to 404 Page
+# BUG-017: About Link Redirects to 404 Page for `error_user`
 
 **Status:** Open
 
@@ -12,14 +12,14 @@
 
 ## Description
 
-The **About** option in the Burger Menu does not redirect the user to the official Sauce Labs website as expected.
+The **About** option in the Burger Menu does not redirect the `error_user` to the official Sauce Labs website as expected.
 
-Instead, clicking the **About** link redirects the user to a **404 – Page Not Found** error page.
+Instead, clicking the **About** link redirects the `error_user` to a **404 – Page Not Found** error page.
 
 ## Preconditions
 
 * SauceDemo is accessible.
-* The user is logged in.
+* User is logged in as `error_user`.
 * The Inventory page is displayed.
 
 ## Steps to Reproduce
@@ -31,11 +31,11 @@ Instead, clicking the **About** link redirects the user to a **404 – Page Not 
 
 ## Expected Result
 
-The user should be redirected to the official Sauce Labs website, and the destination page should load successfully.
+The `error_user` should be redirected to the official Sauce Labs website, and the destination page should load successfully.
 
 ## Actual Result
 
-Clicking the **About** link redirects the user to a **404 – Page Not Found** error page instead of opening the Sauce Labs About page.
+Clicking the **About** link redirects the `error_user` to a **404 – Page Not Found** error page instead of opening the Sauce Labs About page.
 
 ## Evidence
 
