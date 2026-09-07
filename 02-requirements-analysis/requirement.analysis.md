@@ -1,16 +1,14 @@
 # Requirement Analysis for SauceDemo Application
 
-## Purpose
-
 The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the SauceDemo application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
 
 Because SauceDemo does not provide a formal requirements specification, the requirements in this document have been back-traced from observable application features, business behavior, user workflows, validation rules, navigation flows, and expected system responses. They provide the reference baseline for evaluating application behavior and for maintaining traceability throughout the QA process.
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
----
+## Functional Requirements
 
-## Authentication / Login
+### Authentication / Login
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -18,9 +16,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
 | REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;🠂&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
----
 
-## Product Inventory
+
+### Product Inventory
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -31,9 +29,10 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ-INV-05 | System shall load the Inventory page within an<br>acceptable response time. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;response&nbsp;time |
 | REQ-INV-06 | System shall ensure all interactive elements on the<br>Inventory page (buttons, menu links) respond<br>correctly. | All&nbsp;Add&nbsp;to&nbsp;Cart&nbsp;buttons&nbsp;are&nbsp;responsive<br>Burger&nbsp;Menu&nbsp;options&nbsp;respond&nbsp;correctly<br>About&nbsp;link&nbsp;redirects&nbsp;to&nbsp;the&nbsp;expected&nbsp;destination |
 
----
 
-## Product Detail
+
+
+### Product Detail
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -42,9 +41,8 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑DET‑03 | System shall allow adding and removing products to/from the cart directly from the detail page. | Add&nbsp;to&nbsp;Cart&nbsp;adds&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge<br>Remove&nbsp;removes&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge |
 | REQ‑DET‑04 | System shall gracefully handle access to invalid or non-existent products and prevent them from proceeding through checkout. | Invalid&nbsp;product&nbsp;URL&nbsp;displays&nbsp;"ITEM&nbsp;NOT&nbsp;FOUND"<br>Invalid&nbsp;products&nbsp;cannot&nbsp;proceed&nbsp;through&nbsp;the&nbsp;checkout&nbsp;flow |
 
----
 
-## Shopping Cart
+### Shopping Cart
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -53,9 +51,8 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ-CART-03 | System shall display the Cart page with correct<br>layout, alignment, and positioning of elements. | Cart&nbsp;layout&nbsp;is&nbsp;correctly&nbsp;aligned<br>Cart&nbsp;icons&nbsp;are&nbsp;correctly&nbsp;positioned<br>Checkout&nbsp;button&nbsp;is&nbsp;correctly&nbsp;positioned |
 | REQ‑CART‑04 | System shall prevent users from proceeding to<br>checkout when the cart is empty. | Checkout&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
----
 
-## Checkout Step One (Customer Information)
+### Checkout Step One (Customer Information)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -65,9 +62,8 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ-CKT1-04 | System shall correctly accept and register<br>keyboard input into each customer<br>information field. | First&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Last&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>ZIP/Postal&nbsp;Code&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Valid&nbsp;input&nbsp;in&nbsp;all&nbsp;fields&nbsp;allows&nbsp;progression&nbsp;to&nbsp;the&nbsp;next&nbsp;step |
 | REQ‑CKT1‑05 | System shall prevent access to Checkout Step One<br>when the cart is empty. | Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
----
 
-## Checkout Step Two (Overview)
+### Checkout Step Two (Overview)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -77,9 +73,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑CKT2‑04 | System shall correctly calculate and display the<br>item total, tax, and overall total. | Price&nbsp;Total&nbsp;section&nbsp;is&nbsp;displayed<br>Item&nbsp;Total&nbsp;equals&nbsp;the&nbsp;exact&nbsp;sum&nbsp;of&nbsp;item&nbsp;prices |
 | REQ-CKT2-05 | System shall allow users to complete or cancel<br>the order from the Overview page. | Finish&nbsp;completes&nbsp;the&nbsp;order&nbsp;and&nbsp;navigates&nbsp;to&nbsp;confirmation<br>Cancel&nbsp;returns&nbsp;to&nbsp;Inventory&nbsp;with&nbsp;cart&nbsp;unchanged |
 
----
 
-## Checkout Complete
+
+### Checkout Complete
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -88,9 +84,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑CKTC‑03 | System shall clear all cart contents once an order is completed. | Cart&nbsp;is&nbsp;empty&nbsp;and&nbsp;badge&nbsp;is&nbsp;hidden&nbsp;after&nbsp;completion<br>Cart&nbsp;remains&nbsp;empty&nbsp;with&nbsp;no&nbsp;previous&nbsp;items&nbsp;on&nbsp;re-check |
 | REQ‑CKTC‑04 | System shall prevent access to the Checkout<br>Complete page, and prevent order resubmission, outside of a valid completed-checkout flow. | Direct&nbsp;URL&nbsp;access&nbsp;without&nbsp;a&nbsp;completed&nbsp;order&nbsp;is&nbsp;blocked<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;return&nbsp;to&nbsp;a&nbsp;resubmittable&nbsp;completed-order&nbsp;state |
 
----
 
-## Logout & Session Management
+
+### Logout & Session Management
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -98,7 +94,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑SESS‑02 | System shall fully terminate the session on logout and prevent access to any previously authenticated page. | Inventory&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;via&nbsp;direct&nbsp;URL&nbsp;after&nbsp;logout<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;restore&nbsp;access&nbsp;to&nbsp;Inventory&nbsp;after&nbsp;logout<br>Checkout&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;after&nbsp;logout<br>No&nbsp;previously&nbsp;authenticated&nbsp;pages&nbsp;remain&nbsp;accessible&nbsp;after&nbsp;logout |
 | REQ‑SESS‑03 | System shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
 
----
+
 
 ## Non-Functional Observations
 
