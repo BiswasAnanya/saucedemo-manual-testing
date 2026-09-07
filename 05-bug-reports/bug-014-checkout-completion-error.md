@@ -53,10 +53,9 @@ After clicking **Finish**, `error_user` cannot complete the order and does not r
 ![Bug evidence](../Screenshots/bug-014.png)
 
 ## Notes
-
-This defect is separate from other `error_user` defects because it affects the checkout completion workflow. 
-For example, BUG-008 concerns the Remove button in the Shopping Cart, while BUG-015 concerns completing an order from the Checkout Overview page. 
-Although both defects affect `error_user`, they involve different application functions and should therefore be tracked separately.
+This defect is separate from other `error_user` defects because it affects the checkout completion workflow specifically. 
+For example, BUG-008 concerns the Remove button in the Shopping Cart, while this defect concerns completing an order from the Checkout Overview page. 
+Although both affect `error_user`, they involve different application functions and are therefore tracked separately.
 
 ---
 
