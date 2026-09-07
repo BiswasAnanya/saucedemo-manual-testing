@@ -14,9 +14,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to<br>log in and rejecting invalid attempts with<br>appropriate error feedback. | Valid&nbsp;credentials&nbsp;→&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;→&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;→&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;→&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;→&nbsp;login&nbsp;blocked |
-| REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful<br>login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
-| REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;→&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
+| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to log in <br> and rejecting invalid attempts with<br>appropriate error feedback. | Valid&nbsp;credentials&nbsp;🠂&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;🠂&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;🠂&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;🠂&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;🠂&nbsp;login&nbsp;blocked |
+| REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
+| REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;🠂&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
 ---
 
@@ -25,7 +25,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
 | REQ‑INV‑01 | System shall display the Inventory page after login<br>and allow navigation to and from individual<br>product details. | Inventory&nbsp;page&nbsp;loads&nbsp;after&nbsp;login<br>Clicking&nbsp;a&nbsp;product&nbsp;name&nbsp;navigates&nbsp;to&nbsp;its&nbsp;detail&nbsp;page<br>Returning&nbsp;from&nbsp;detail&nbsp;page&nbsp;retains&nbsp;previous&nbsp;sort&nbsp;order |
-| REQ-INV-02 | System shall allow products to be sorted by price<br>and name, and correctly reorder them based on<br>the selected option. | Sorting&nbsp;by&nbsp;price&nbsp;low→high&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;price&nbsp;high→low&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;A→Z&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;Z→A&nbsp;reorders&nbsp;correctly |
+| REQ-INV-02 | System shall allow products to be sorted by price<br>and name, and correctly reorder them based on<br>the selected option. | Sorting&nbsp;by&nbsp;price&nbsp;low🠂high&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;price&nbsp;high🠂low&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;A🠂Z&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;Z🠂A&nbsp;reorders&nbsp;correctly |
 | REQ-INV-03 | System shall display the correct image for each<br>product on the Inventory page. | All&nbsp;products&nbsp;show&nbsp;valid&nbsp;images,&nbsp;no&nbsp;broken/missing&nbsp;icons<br>Each&nbsp;product&nbsp;displays&nbsp;its&nbsp;corresponding&nbsp;image |
 | REQ-INV-04 | System shall present a consistent, correctly<br>aligned layout on the Inventory page. | Layout,&nbsp;spacing,&nbsp;and&nbsp;alignment&nbsp;are&nbsp;consistent<br>Product&nbsp;cards&nbsp;and&nbsp;controls&nbsp;are&nbsp;correctly&nbsp;positioned |
 | REQ-INV-05 | System shall load the Inventory page within an<br>acceptable response time. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;response&nbsp;time |
@@ -37,10 +37,10 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-DET-01 | System shall navigate to the correct product<br>detail page and display accurate, matching<br>product information. | Clicking&nbsp;a&nbsp;product&nbsp;opens&nbsp;its&nbsp;detail&nbsp;page<br>Product&nbsp;name&nbsp;on&nbsp;detail&nbsp;page&nbsp;matches&nbsp;the&nbsp;selected&nbsp;item<br>Product&nbsp;information&nbsp;matches&nbsp;the&nbsp;selected&nbsp;product |
-| REQ‑DET‑02 | System shall display all required product<br>information completely and correctly on the<br>detail page. | All&nbsp;required&nbsp;elements&nbsp;(image,&nbsp;name,&nbsp;description,&nbsp;price,&nbsp;buttons)&nbsp;are&nbsp;visible<br>Product&nbsp;description&nbsp;displays&nbsp;fully,&nbsp;without&nbsp;truncation<br>Product&nbsp;image&nbsp;loads&nbsp;correctly |
-| REQ‑DET‑03 | System shall allow adding and removing products<br>to/from the cart directly from the detail page. | Add&nbsp;to&nbsp;Cart&nbsp;adds&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge<br>Remove&nbsp;removes&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge |
-| REQ‑DET‑04 | System shall gracefully handle access to invalid or<br>non-existent products and prevent them from<br>proceeding through checkout. | Invalid&nbsp;product&nbsp;URL&nbsp;displays&nbsp;"ITEM&nbsp;NOT&nbsp;FOUND"<br>Invalid&nbsp;products&nbsp;cannot&nbsp;proceed&nbsp;through&nbsp;the&nbsp;checkout&nbsp;flow |
+| REQ-DET-01 | System shall navigate to the correct product detail page and display accurate, matching product information. | Clicking&nbsp;a&nbsp;product&nbsp;opens&nbsp;its&nbsp;detail&nbsp;page<br>Product&nbsp;name&nbsp;on&nbsp;detail&nbsp;page&nbsp;matches&nbsp;the&nbsp;selected&nbsp;item<br>Product&nbsp;information&nbsp;matches&nbsp;the&nbsp;selected&nbsp;product |
+| REQ‑DET‑02 | System shall display all required product information completely and correctly on the detail page. | All&nbsp;required&nbsp;elements&nbsp;(image,&nbsp;name,&nbsp;description,&nbsp;price,&nbsp;buttons)&nbsp;are&nbsp;visible<br>Product&nbsp;description&nbsp;displays&nbsp;fully,&nbsp;without&nbsp;truncation<br>Product&nbsp;image&nbsp;loads&nbsp;correctly |
+| REQ‑DET‑03 | System shall allow adding and removing products to/from the cart directly from the detail page. | Add&nbsp;to&nbsp;Cart&nbsp;adds&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge<br>Remove&nbsp;removes&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge |
+| REQ‑DET‑04 | System shall gracefully handle access to invalid or non-existent products and prevent them from proceeding through checkout. | Invalid&nbsp;product&nbsp;URL&nbsp;displays&nbsp;"ITEM&nbsp;NOT&nbsp;FOUND"<br>Invalid&nbsp;products&nbsp;cannot&nbsp;proceed&nbsp;through&nbsp;the&nbsp;checkout&nbsp;flow |
 
 ---
 
@@ -83,10 +83,10 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ‑CKTC‑01 | System shall display the Checkout Complete page<br>with the correct title, confirmation message,<br>and navigation elements after order completion. | Page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title&nbsp;after&nbsp;Finish<br>Confirmation&nbsp;message&nbsp;is&nbsp;displayed<br>Confirmation&nbsp;sub-text&nbsp;is&nbsp;displayed<br>Back&nbsp;Home&nbsp;button&nbsp;is&nbsp;visible |
-| REQ‑CKTC‑02 | System shall allow users to return to the<br>Inventory page after order completion via the<br>Back Home button. | Back&nbsp;Home&nbsp;navigates&nbsp;to&nbsp;Inventory&nbsp;page |
-| REQ‑CKTC‑03 | System shall clear all cart contents once an<br>order is completed. | Cart&nbsp;is&nbsp;empty&nbsp;and&nbsp;badge&nbsp;is&nbsp;hidden&nbsp;after&nbsp;completion<br>Cart&nbsp;remains&nbsp;empty&nbsp;with&nbsp;no&nbsp;previous&nbsp;items&nbsp;on&nbsp;re-check |
-| REQ‑CKTC‑04 | System shall prevent access to the Checkout<br>Complete page, and prevent order resubmission,<br>outside of a valid completed-checkout flow. | Direct&nbsp;URL&nbsp;access&nbsp;without&nbsp;a&nbsp;completed&nbsp;order&nbsp;is&nbsp;blocked<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;return&nbsp;to&nbsp;a&nbsp;resubmittable&nbsp;completed-order&nbsp;state |
+| REQ‑CKTC‑01 | System shall display the Checkout Complete page with the correct title, confirmation message, and navigation elements after order completion. | Page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title&nbsp;after&nbsp;Finish<br>Confirmation&nbsp;message&nbsp;is&nbsp;displayed<br>Confirmation&nbsp;sub-text&nbsp;is&nbsp;displayed<br>Back&nbsp;Home&nbsp;button&nbsp;is&nbsp;visible |
+| REQ‑CKTC‑02 | System shall allow users to return to the<br>Inventory page after order completion via the Back Home button. | Back&nbsp;Home&nbsp;navigates&nbsp;to&nbsp;Inventory&nbsp;page |
+| REQ‑CKTC‑03 | System shall clear all cart contents once an order is completed. | Cart&nbsp;is&nbsp;empty&nbsp;and&nbsp;badge&nbsp;is&nbsp;hidden&nbsp;after&nbsp;completion<br>Cart&nbsp;remains&nbsp;empty&nbsp;with&nbsp;no&nbsp;previous&nbsp;items&nbsp;on&nbsp;re-check |
+| REQ‑CKTC‑04 | System shall prevent access to the Checkout<br>Complete page, and prevent order resubmission, outside of a valid completed-checkout flow. | Direct&nbsp;URL&nbsp;access&nbsp;without&nbsp;a&nbsp;completed&nbsp;order&nbsp;is&nbsp;blocked<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;return&nbsp;to&nbsp;a&nbsp;resubmittable&nbsp;completed-order&nbsp;state |
 
 ---
 
@@ -94,9 +94,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ‑SESS‑01 | System shall provide a visible and functional<br>logout option that terminates the user's session<br>and returns them to the Login page. | Logout&nbsp;option&nbsp;is&nbsp;visible&nbsp;in&nbsp;the&nbsp;navigation&nbsp;menu<br>Clicking&nbsp;Logout&nbsp;logs&nbsp;the&nbsp;user&nbsp;out&nbsp;and&nbsp;redirects&nbsp;to&nbsp;Login&nbsp;page<br>Login&nbsp;page&nbsp;is&nbsp;displayed&nbsp;correctly&nbsp;after&nbsp;logout |
-| REQ‑SESS‑02 | System shall fully terminate the session on logout<br>and prevent access to any previously<br>authenticated page. | Inventory&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;via&nbsp;direct&nbsp;URL&nbsp;after&nbsp;logout<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;restore&nbsp;access&nbsp;to&nbsp;Inventory&nbsp;after&nbsp;logout<br>Checkout&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;after&nbsp;logout<br>No&nbsp;previously&nbsp;authenticated&nbsp;pages&nbsp;remain&nbsp;accessible&nbsp;after&nbsp;logout |
-| REQ‑SESS‑03 | System shall persist cart contents across a<br>re-login for the same user, and maintain<br>independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
+| REQ‑SESS‑01 | System shall provide a visible and functional logout option that terminates the user's session and returns them to the Login page. | Logout&nbsp;option&nbsp;is&nbsp;visible&nbsp;in&nbsp;the&nbsp;navigation&nbsp;menu<br>Clicking&nbsp;Logout&nbsp;logs&nbsp;the&nbsp;user&nbsp;out&nbsp;and&nbsp;redirects&nbsp;to&nbsp;Login&nbsp;page<br>Login&nbsp;page&nbsp;is&nbsp;displayed&nbsp;correctly&nbsp;after&nbsp;logout |
+| REQ‑SESS‑02 | System shall fully terminate the session on logout and prevent access to any previously authenticated page. | Inventory&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;via&nbsp;direct&nbsp;URL&nbsp;after&nbsp;logout<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;restore&nbsp;access&nbsp;to&nbsp;Inventory&nbsp;after&nbsp;logout<br>Checkout&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;after&nbsp;logout<br>No&nbsp;previously&nbsp;authenticated&nbsp;pages&nbsp;remain&nbsp;accessible&nbsp;after&nbsp;logout |
+| REQ‑SESS‑03 | System shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
 
 ---
 
