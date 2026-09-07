@@ -44,7 +44,8 @@ A different product is displayed on the Product Detail page instead of the selec
 
 ## Notes
 
-This defect represents the downstream manifestation of the product information/image mismatch originally observed in [BUG-002](bug-002-incorrect-product-image-inventory.md). TC-210 and TC-305 that the same incorrect product association persists across Product Detail and Shopping Cart. These test cases are therefore tracked under BUG-007 rather than logged as separate defects.
+This defect represents the downstream manifestation of the product information/image mismatch originally observed in [BUG-002](bug-002-incorrect-product-image-inventory.md). 
+TC-210 and TC-305 confirm that the same incorrect product association persists across Product Detail and Shopping Cart. These test cases are therefore tracked under BUG-007 rather than logged as separate defects.
 
 ---
 
