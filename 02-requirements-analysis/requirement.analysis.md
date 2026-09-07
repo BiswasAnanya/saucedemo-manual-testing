@@ -1,10 +1,10 @@
-# Requirement Analysis – SauceDemo
+# Requirement Analysis for SauceDemo Application
 
 ## Purpose
 
-The purpose of this requirements analysis is to establish a clear and testable understanding of the expected behavior of the SauceDemo application before test design and execution.
+The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the SauceDemo application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
 
-Because SauceDemo does not provide formal requirements, the requirements were reverse-engineered from observed application behavior and user workflows. They define the key functional requirements, business rules, validation rules, navigation behavior, and expected system responses, and serve as the basis for test case design and traceability.
+Because SauceDemo does not provide a formal requirements specification, the requirements in this document have been back-traced from observable application features, business behavior, user workflows, validation rules, navigation flows, and expected system responses. They provide the reference baseline for evaluating application behavior and for maintaining traceability throughout the QA process.
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
