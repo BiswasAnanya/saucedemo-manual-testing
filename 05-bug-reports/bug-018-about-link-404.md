@@ -1,4 +1,4 @@
-# BUG-017: About Link Redirects to 404 Page for `error_user`
+# BUG-018: About Link Redirects to 404 Page for `error_user`
 
 **Status:** Open
 
@@ -47,4 +47,4 @@ The About link does not fulfill its intended navigation function because the con
 
 ---
 
-[← Previous Bug](bug-017-cross-user-cart-data-isolation.md)          [Next Bug →](bug-018.md)
+[← Previous Bug](bug-017-cross-user-cart-data-isolation.md)         
