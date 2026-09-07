@@ -1,6 +1,7 @@
 # Requirement Analysis – SauceDemo
 
-## Purpose 
+
+## Purpose
 
 The purpose of this requirements analysis is to establish a clear and testable understanding of the expected behavior of the SauceDemo application before test design and execution.
 
@@ -8,324 +9,119 @@ Because SauceDemo does not provide formal requirements, the requirements were re
 
 ## Application Overview
 
-SauceDemo (Swag Labs) is a sample e-commerce application covering login, product browsing, cart management, checkout, and logout. Predefined users simulate different application behaviors, including problem_user, error_user, performance_glitch_user, and visual_user.
+SauceDemo (Swag Labs) is a sample e-commerce application covering login, product browsing, cart management, checkout, and logout. Predefined users simulate different application behaviors, including `problem_user`, `error_user`, `performance_glitch_user`, and `visual_user`.
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
-## Functional Requirements
+---
 
-### Authentication / Login
+## Authentication / Login
 
-#### REQ-AUTH-01: User Authentication
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to<br>log in and rejecting invalid attempts with<br>appropriate error feedback. | Valid&nbsp;credentials&nbsp;→&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;→&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;→&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;→&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;→&nbsp;login&nbsp;blocked |
+| REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful<br>login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
+| REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;→&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
-The system shall authenticate users based on username and password, allowing valid predefined users to log in and rejecting invalid attempts with appropriate error feedback.
+---
 
-**Acceptance Criteria:**
-- Valid credentials → login succeeds
-- Wrong password → rejected with error
-- Blank username → required-field error
-- Unregistered credentials → rejected
-- Locked-out account → login blocked
-- Special-behavior users can log in
+## Product Inventory
 
-#### REQ-AUTH-02: Login Performance
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑INV‑01 | System shall display the Inventory page after login<br>and allow navigation to and from individual<br>product details. | Inventory&nbsp;page&nbsp;loads&nbsp;after&nbsp;login<br>Clicking&nbsp;a&nbsp;product&nbsp;name&nbsp;navigates&nbsp;to&nbsp;its&nbsp;detail&nbsp;page<br>Returning&nbsp;from&nbsp;detail&nbsp;page&nbsp;retains&nbsp;previous&nbsp;sort&nbsp;order |
+| REQ-INV-02 | System shall allow products to be sorted by price<br>and name, and correctly reorder them based on<br>the selected option. | Sorting&nbsp;by&nbsp;price&nbsp;low→high&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;price&nbsp;high→low&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;A→Z&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;Z→A&nbsp;reorders&nbsp;correctly |
+| REQ-INV-03 | System shall display the correct image for each<br>product on the Inventory page. | All&nbsp;products&nbsp;show&nbsp;valid&nbsp;images,&nbsp;no&nbsp;broken/missing&nbsp;icons<br>Each&nbsp;product&nbsp;displays&nbsp;its&nbsp;corresponding&nbsp;image |
+| REQ-INV-04 | System shall present a consistent, correctly<br>aligned layout on the Inventory page. | Layout,&nbsp;spacing,&nbsp;and&nbsp;alignment&nbsp;are&nbsp;consistent<br>Product&nbsp;cards&nbsp;and&nbsp;controls&nbsp;are&nbsp;correctly&nbsp;positioned |
+| REQ-INV-05 | System shall load the Inventory page within an<br>acceptable response time. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;response&nbsp;time |
+| REQ-INV-06 | System shall ensure all interactive elements on the<br>Inventory page (buttons, menu links) respond<br>correctly. | All&nbsp;Add&nbsp;to&nbsp;Cart&nbsp;buttons&nbsp;are&nbsp;responsive<br>Burger&nbsp;Menu&nbsp;options&nbsp;respond&nbsp;correctly<br>About&nbsp;link&nbsp;redirects&nbsp;to&nbsp;the&nbsp;expected&nbsp;destination |
 
-The system shall load the Inventory page within an acceptable response time following a successful login.
+---
 
-**Acceptance Criteria:**
-- Inventory page loads within acceptable time
+## Product Detail
 
-#### REQ-AUTH-03: Session Protection
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ-DET-01 | System shall navigate to the correct product<br>detail page and display accurate, matching<br>product information. | Clicking&nbsp;a&nbsp;product&nbsp;opens&nbsp;its&nbsp;detail&nbsp;page<br>Product&nbsp;name&nbsp;on&nbsp;detail&nbsp;page&nbsp;matches&nbsp;the&nbsp;selected&nbsp;item<br>Product&nbsp;information&nbsp;matches&nbsp;the&nbsp;selected&nbsp;product |
+| REQ‑DET‑02 | System shall display all required product<br>information completely and correctly on the<br>detail page. | All&nbsp;required&nbsp;elements&nbsp;(image,&nbsp;name,&nbsp;description,&nbsp;price,&nbsp;buttons)&nbsp;are&nbsp;visible<br>Product&nbsp;description&nbsp;displays&nbsp;fully,&nbsp;without&nbsp;truncation<br>Product&nbsp;image&nbsp;loads&nbsp;correctly |
+| REQ‑DET‑03 | System shall allow adding and removing products<br>to/from the cart directly from the detail page. | Add&nbsp;to&nbsp;Cart&nbsp;adds&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge<br>Remove&nbsp;removes&nbsp;product&nbsp;and&nbsp;updates&nbsp;button/badge |
+| REQ‑DET‑04 | System shall gracefully handle access to invalid or<br>non-existent products and prevent them from<br>proceeding through checkout. | Invalid&nbsp;product&nbsp;URL&nbsp;displays&nbsp;"ITEM&nbsp;NOT&nbsp;FOUND"<br>Invalid&nbsp;products&nbsp;cannot&nbsp;proceed&nbsp;through&nbsp;the&nbsp;checkout&nbsp;flow |
 
-The system shall restrict access to authenticated pages unless a valid session exists.
+---
 
-**Acceptance Criteria:**
-- No session → redirected to Login page
+## Shopping Cart
 
-### Product Inventory
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ-CART-01 | System shall allow users to add one or more<br>products to the cart, updating the button state<br>and cart badge accordingly. | Single,&nbsp;multiple,&nbsp;and&nbsp;all&nbsp;products&nbsp;can&nbsp;be&nbsp;added<br>Cart&nbsp;badge&nbsp;updates&nbsp;correctly&nbsp;when&nbsp;products&nbsp;are&nbsp;added<br>Product&nbsp;data&nbsp;and&nbsp;image&nbsp;remain&nbsp;accurate |
+| REQ-CART-02 | System shall allow users to remove products from<br>the cart, updating the button state and cart<br>badge accordingly. | Removing&nbsp;a&nbsp;product&nbsp;updates&nbsp;button&nbsp;and&nbsp;badge<br>Removed&nbsp;products&nbsp;no&nbsp;longer&nbsp;appear&nbsp;in&nbsp;the&nbsp;cart |
+| REQ-CART-03 | System shall display the Cart page with correct<br>layout, alignment, and positioning of elements. | Cart&nbsp;layout&nbsp;is&nbsp;correctly&nbsp;aligned<br>Cart&nbsp;icons&nbsp;are&nbsp;correctly&nbsp;positioned<br>Checkout&nbsp;button&nbsp;is&nbsp;correctly&nbsp;positioned |
+| REQ‑CART‑04 | System shall prevent users from proceeding to<br>checkout when the cart is empty. | Checkout&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
-#### REQ-INV-01: Inventory Page Display & Navigation
+---
 
-The system shall display the Inventory page after login and allow navigation to and from individual product details.
+## Checkout Step One (Customer Information)
 
-**Acceptance Criteria:**
-- Inventory page loads after login
-- Clicking a product name navigates to its detail page
-- Returning from detail page retains previous sort order
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑CKT1‑01 | System shall display the Checkout Step One page<br>with all required customer information fields and<br>navigation controls. | Checkout&nbsp;Step&nbsp;One&nbsp;page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title<br>All&nbsp;required&nbsp;fields&nbsp;and&nbsp;buttons&nbsp;are&nbsp;displayed |
+| REQ‑CKT1‑02 | System shall validate customer information fields<br>and allow progression only when valid data<br>is provided. | Valid&nbsp;information&nbsp;allows&nbsp;progression&nbsp;to&nbsp;Step&nbsp;Two<br>Empty&nbsp;fields&nbsp;are&nbsp;rejected&nbsp;with&nbsp;a&nbsp;required-field&nbsp;error |
+| REQ‑CKT1‑03 | System shall allow users to cancel out of Checkout<br>Step One and return to the Cart page without<br>losing cart contents. | Cancel&nbsp;returns&nbsp;to&nbsp;Cart&nbsp;page&nbsp;with&nbsp;items&nbsp;unchanged |
+| REQ-CKT1-04 | System shall correctly accept and register<br>keyboard input into each customer<br>information field. | First&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Last&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>ZIP/Postal&nbsp;Code&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Valid&nbsp;input&nbsp;in&nbsp;all&nbsp;fields&nbsp;allows&nbsp;progression&nbsp;to&nbsp;the&nbsp;next&nbsp;step |
+| REQ‑CKT1‑05 | System shall prevent access to Checkout Step One<br>when the cart is empty. | Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
-#### REQ-INV-02: Product Sorting
+---
 
-The system shall allow products to be sorted by price and name, and correctly reorder them based on the selected option.
+## Checkout Step Two (Overview)
 
-**Acceptance Criteria:**
-- Sorting by price low→high reorders correctly
-- Sorting by price high→low reorders correctly
-- Sorting works correctly for `problem_user`
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑CKT2‑01 | System shall display the Checkout Overview page<br>only after valid customer information has been<br>submitted, and shall block direct access when<br>the cart is empty. | Overview&nbsp;page&nbsp;loads&nbsp;after&nbsp;valid&nbsp;Step&nbsp;One&nbsp;submission<br>Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
+| REQ‑CKT2‑02 | System shall accurately display all cart items,<br>their details, and quantities on the<br>Overview page. | All&nbsp;cart&nbsp;items&nbsp;are&nbsp;listed&nbsp;with&nbsp;correct&nbsp;details<br>Item&nbsp;details&nbsp;match&nbsp;what&nbsp;was&nbsp;added&nbsp;to&nbsp;cart<br>Item&nbsp;quantity&nbsp;is&nbsp;displayed&nbsp;correctly |
+| REQ‑CKT2‑03 | System shall display dummy payment and shipping<br>information on the Overview page. | Payment&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed<br>Shipping&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed |
+| REQ‑CKT2‑04 | System shall correctly calculate and display the<br>item total, tax, and overall total. | Price&nbsp;Total&nbsp;section&nbsp;is&nbsp;displayed<br>Item&nbsp;Total&nbsp;equals&nbsp;the&nbsp;exact&nbsp;sum&nbsp;of&nbsp;item&nbsp;prices |
+| REQ-CKT2-05 | System shall allow users to complete or cancel<br>the order from the Overview page. | Finish&nbsp;completes&nbsp;the&nbsp;order&nbsp;and&nbsp;navigates&nbsp;to&nbsp;confirmation<br>Cancel&nbsp;returns&nbsp;to&nbsp;Inventory&nbsp;with&nbsp;cart&nbsp;unchanged |
 
-#### REQ-INV-03: Product Image Accuracy
+---
 
-The system shall display the correct image for each product on the Inventory page.
+## Checkout Complete
 
-**Acceptance Criteria:**
-- All products show valid images, no broken/missing icons
-- Correct image-product association for `problem_user`
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑CKTC‑01 | System shall display the Checkout Complete page<br>with the correct title, confirmation message,<br>and navigation elements after order completion. | Page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title&nbsp;after&nbsp;Finish<br>Confirmation&nbsp;message&nbsp;is&nbsp;displayed<br>Confirmation&nbsp;sub-text&nbsp;is&nbsp;displayed<br>Back&nbsp;Home&nbsp;button&nbsp;is&nbsp;visible |
+| REQ‑CKTC‑02 | System shall allow users to return to the<br>Inventory page after order completion via the<br>Back Home button. | Back&nbsp;Home&nbsp;navigates&nbsp;to&nbsp;Inventory&nbsp;page |
+| REQ‑CKTC‑03 | System shall clear all cart contents once an<br>order is completed. | Cart&nbsp;is&nbsp;empty&nbsp;and&nbsp;badge&nbsp;is&nbsp;hidden&nbsp;after&nbsp;completion<br>Cart&nbsp;remains&nbsp;empty&nbsp;with&nbsp;no&nbsp;previous&nbsp;items&nbsp;on&nbsp;re-check |
+| REQ‑CKTC‑04 | System shall prevent access to the Checkout<br>Complete page, and prevent order resubmission,<br>outside of a valid completed-checkout flow. | Direct&nbsp;URL&nbsp;access&nbsp;without&nbsp;a&nbsp;completed&nbsp;order&nbsp;is&nbsp;blocked<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;return&nbsp;to&nbsp;a&nbsp;resubmittable&nbsp;completed-order&nbsp;state |
 
-#### REQ-INV-04: UI/Visual Presentation
+---
 
-The system shall present a consistent, correctly aligned layout on the Inventory page.
+## Logout & Session Management
 
-**Acceptance Criteria:**
-- Layout, spacing, and alignment are correct for `visual_user`
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑SESS‑01 | System shall provide a visible and functional<br>logout option that terminates the user's session<br>and returns them to the Login page. | Logout&nbsp;option&nbsp;is&nbsp;visible&nbsp;in&nbsp;the&nbsp;navigation&nbsp;menu<br>Clicking&nbsp;Logout&nbsp;logs&nbsp;the&nbsp;user&nbsp;out&nbsp;and&nbsp;redirects&nbsp;to&nbsp;Login&nbsp;page<br>Login&nbsp;page&nbsp;is&nbsp;displayed&nbsp;correctly&nbsp;after&nbsp;logout |
+| REQ‑SESS‑02 | System shall fully terminate the session on logout<br>and prevent access to any previously<br>authenticated page. | Inventory&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;via&nbsp;direct&nbsp;URL&nbsp;after&nbsp;logout<br>Browser&nbsp;Back&nbsp;does&nbsp;not&nbsp;restore&nbsp;access&nbsp;to&nbsp;Inventory&nbsp;after&nbsp;logout<br>Checkout&nbsp;page&nbsp;is&nbsp;inaccessible&nbsp;after&nbsp;logout<br>No&nbsp;previously&nbsp;authenticated&nbsp;pages&nbsp;remain&nbsp;accessible&nbsp;after&nbsp;logout |
+| REQ‑SESS‑03 | System shall persist cart contents across a<br>re-login for the same user, and maintain<br>independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
 
-#### REQ-INV-05: Page Load Performance
+---
 
-The system shall load the Inventory page within an acceptable response time.
-
-**Acceptance Criteria:**
-- Inventory page loads within acceptable time for `performance_glitch_user`
-
-#### REQ-INV-06: Interactive Element Responsiveness
-
-The system shall ensure all interactive elements on the Inventory page (buttons, menu links) respond correctly for `error_user`.
-
-**Acceptance Criteria:**
-- All Add to Cart buttons are responsive
-- Burger Menu → About link redirects correctly
-
-### Product Detail
-
-#### REQ-DET-01: Product Detail Navigation & Accuracy
-
-The system shall navigate to the correct product detail page and display accurate, matching product information.
-
-**Acceptance Criteria:**
-- Clicking a product opens its detail page
-- Product name on detail page matches the selected item
-- Correct product displayed for `problem_user`
-
-#### REQ-DET-02: Product Detail Page Content
-
-The system shall display all required product information completely and correctly on the detail page.
-
-**Acceptance Criteria:**
-- All required elements (image, name, description, price, buttons) are visible
-- Product description displays fully, without truncation
-- Product image loads correctly
-
-#### REQ-DET-03: Cart Actions from Detail Page
-
-The system shall allow adding and removing products to/from the cart directly from the detail page.
-
-**Acceptance Criteria:**
-- Add to Cart adds product and updates button/badge
-- Remove removes product and updates button/badge
-
-#### REQ-DET-04: Invalid Product Handling
-
-The system shall gracefully handle access to invalid or non-existent products and prevent them from proceeding through checkout.
-
-**Acceptance Criteria:**
-- Invalid product URL displays "ITEM NOT FOUND"
-- Invalid products cannot proceed through the checkout flow
-
-### Shopping Cart
-
-#### REQ-CART-01: Add Products to Cart
-
-The system shall allow users to add one or more products to the cart, updating the button state and cart badge accordingly.
-
-**Acceptance Criteria:**
-- Single, multiple, and all products can be added with the cart badge updating correctly.
-- Product data and image are correct for `problem_user`.
-- All products can be added for `error_user`.
-
-#### REQ-CART-02: Remove Products from Cart
-
-The system shall allow users to remove products from the cart, updating the button state and cart badge accordingly.
-
-**Acceptance Criteria:**
-- Removing a product updates button and badge
-- Removal works correctly for `error_user`
-
-#### REQ-CART-03: Cart Page UI
-
-The system shall display the Cart page with correct layout, alignment, and positioning of elements.
-
-**Acceptance Criteria:**
-- Cart layout, icon alignment, and Checkout button position are correct for `visual_user`
-
-#### REQ-CART-04: Checkout Eligibility
-
-The system shall prevent users from proceeding to checkout when the cart is empty.
-
-**Acceptance Criteria:**
-- Checkout is blocked when cart is empty
-
-### Checkout Step One (Customer Information)
-
-#### REQ-CKT1-01: Checkout Step One Page & Form Display
-
-The system shall display the Checkout Step One page with all required customer information fields and navigation controls.
-
-**Acceptance Criteria:**
-- Checkout Step One page loads with correct title
-- All required fields and buttons are displayed
-
-#### REQ-CKT1-02: Customer Information Validation
-
-The system shall validate customer information fields and allow progression only when valid data is provided.
-
-**Acceptance Criteria:**
-- Valid information allows progression to Step Two
-- Empty fields are rejected with a required-field error
-
-#### REQ-CKT1-03: Checkout Navigation Controls
-
-The system shall allow users to cancel out of Checkout Step One and return to the Cart page without losing cart contents.
-
-**Acceptance Criteria:**
-- Cancel returns to Cart page with items unchanged
-
-#### REQ-CKT1-04: Form Field Input Handling
-
-The system shall correctly accept and register keyboard input into each customer information field.
-
-**Acceptance Criteria:**
-- All fields accept input correctly for `problem_user`
-- Valid input in all fields allows progression to the next step
-
-#### REQ-CKT1-05: Checkout Access Restriction
-
-The system shall prevent access to Checkout Step One when the cart is empty.
-
-**Acceptance Criteria:**
-- Direct URL access is blocked when cart is empty
-
-### Checkout Step Two (Overview)
-
-#### REQ-CKT2-01: Checkout Overview Page Access
-
-The system shall display the Checkout Overview page only after valid customer information has been submitted, and shall block direct access when the cart is empty.
-
-**Acceptance Criteria:**
-- Overview page loads after valid Step One submission
-- Direct URL access is blocked when cart is empty
-
-#### REQ-CKT2-02: Cart Item Accuracy on Overview
-
-The system shall accurately display all cart items, their details, and quantities on the Overview page.
-
-**Acceptance Criteria:**
-- All cart items are listed with correct details
-- Item details match what was added to cart
-- Item quantity is displayed correctly
-
-#### REQ-CKT2-03: Payment & Shipping Information Display
-
-The system shall display dummy payment and shipping information on the Overview page.
-
-**Acceptance Criteria:**
-- Payment Information section is displayed
-- Shipping Information section is displayed
-
-#### REQ-CKT2-04: Order Total Calculation
-
-The system shall correctly calculate and display the item total, tax, and overall total.
-
-**Acceptance Criteria:**
-- Price Total section is displayed
-- Item Total equals the exact sum of item prices
-
-#### REQ-CKT2-05: Order Completion & Cancellation
-
-The system shall allow users to complete or cancel the order from the Overview page.
-
-**Acceptance Criteria:**
-- Finish completes the order and navigates to confirmation
-- Cancel returns to Inventory with cart unchanged
-- Order completion succeeds for `error_user`
-
-### Checkout Complete
-
-#### REQ-CKTC-01: Checkout Complete Page Display
-
-The system shall display the Checkout Complete page with the correct title, confirmation message, and navigation elements after order completion.
-
-**Acceptance Criteria:**
-- Page loads with correct title after Finish
-- Confirmation message is displayed
-- Confirmation sub-text is displayed
-- Back Home button is visible
-
-#### REQ-CKTC-02: Post-Order Navigation
-
-The system shall allow users to return to the Inventory page after order completion via the Back Home button.
-
-**Acceptance Criteria:**
-- Back Home navigates to Inventory page
-
-#### REQ-CKTC-03: Cart Clearing After Order Completion
-
-The system shall clear all cart contents once an order is completed.
-
-**Acceptance Criteria:**
-- Cart is empty and badge is hidden after completion
-- Cart remains empty with no previous items on re-check
-
-#### REQ-CKTC-04: Checkout Completion Access Control
-
-The system shall prevent access to the Checkout Complete page, and prevent order resubmission, outside of a valid completed-checkout flow.
-
-**Acceptance Criteria:**
-- Direct URL access without a completed order is blocked
-- Browser Back does not return to a resubmittable completed-order state
-
-### Logout & Session Management
-
-#### REQ-SESS-01: Logout Functionality
-
-The system shall provide a visible and functional logout option that terminates the user's session and returns them to the Login page.
-
-**Acceptance Criteria:**
-- Logout option is visible in the navigation menu
-- Clicking Logout logs the user out and redirects to Login page
-- Login page is displayed correctly after logout
-
-#### REQ-SESS-02: Session Termination & Page Protection
-
-The system shall fully terminate the session on logout and prevent access to any previously authenticated page.
-
-**Acceptance Criteria:**
-- Inventory page is inaccessible via direct URL after logout
-- Browser Back does not restore access to Inventory after logout
-- Checkout page is inaccessible after logout
-- No previously authenticated pages remain accessible after logout
-
-#### REQ-SESS-03: Cart Persistence & Isolation
-
-The system shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session.
-
-**Acceptance Criteria:**
-- Cart items persist for the same user after logout/login
-- Cart data is isolated between different user sessions
-
-### Non-Functional Requirements
+## Non-Functional Observations
 
 This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here — a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
 
 | Category | Related Functional Requirement(s) | Observation |
 |---|---|---|
-| Performance | REQ-AUTH-02, REQ-INV-05 | Noticeable load-time delay for `performance_glitch_user` |
-| Usability / Responsiveness | REQ-INV-06, REQ-CART-01, REQ-CART-02, REQ-CKT2-05 | Unresponsive UI elements (buttons, links) for `error_user` |
-| UI / Visual Consistency | REQ-INV-04, REQ-CART-03 | Layout and alignment inconsistencies for `visual_user` |
+| Performance | REQ‑AUTH‑02, REQ‑INV‑05 | Noticeable&nbsp;load-time&nbsp;delay&nbsp;for&nbsp;`performance_glitch_user` |
+| Usability / Responsiveness | REQ‑INV‑06, REQ‑CART‑01, REQ‑CART‑02, REQ‑CKT2‑05 | Unresponsive&nbsp;UI&nbsp;elements&nbsp;(buttons,&nbsp;links)&nbsp;for&nbsp;`error_user` |
+| UI / Visual Consistency | REQ‑INV‑04, REQ‑CART‑03 | Layout&nbsp;and&nbsp;alignment&nbsp;inconsistencies&nbsp;for&nbsp;`visual_user` |
 
-
-### Out of Scope
+## Out of Scope
 
 - **Compatibility** — No cross-browser or cross-device testing was performed.
 - **Load/Performance testing** — Performance observations were limited to manual, single-user page-load checks.
 
-### Assumptions
+## Assumptions
 
 - SauceDemo does not provide official requirement documentation; requirements were reverse-engineered from observed application behavior.
-- Where behavior was ambiguous or inconsistent, requirements reflect the intended behavior for standard usage, with deviations treated as defects. Requirements reflect observations made in July 2026 and may not account for later changes to the live site.
+- Where behavior was ambiguous or inconsistent, requirements reflect the intended behavior for standard usage, with deviations treated as defects.
+- Requirements reflect observations made in July 2026 and may not account for later changes to the live site.
