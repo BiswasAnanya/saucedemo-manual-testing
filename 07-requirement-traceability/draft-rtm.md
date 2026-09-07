@@ -16,7 +16,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-AUTH-02 | Login Performance | TC-008 | ❌ Failed | BUG-001 |
 | REQ-AUTH-03 | Session Protection | TC-011 | ✅ Passed | — |
 
----
+
 
 ## Product Inventory
 
@@ -32,7 +32,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-INV-06 | Interactive Element Responsiveness | TC-111 | ❌ Failed | BUG-005 |
 | REQ-INV-06 | Interactive Element Responsiveness | TC-112 | ❌ Failed | BUG-018 |
 
----
+
 
 ## Product Detail
 
@@ -45,7 +45,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-DET-04 | Invalid Product Handling | TC-208 | ✅ Passed | — |
 | REQ-DET-04 | Invalid Product Handling | TC-209 | ❌ Failed | BUG-006 |
 
----
+
 
 ## Shopping Cart
 
@@ -59,7 +59,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-CART-03 | Cart Page UI | TC-308 | ❌ Failed | BUG-009 |
 | REQ-CART-04 | Checkout Eligibility | TC-309 | ❌ Failed | BUG-010 |
 
----
+
 
 ## Checkout Step One (Customer Information)
 
@@ -72,7 +72,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-CKT1-04 | Form Field Input Handling | TC-407 | ❌ Failed | BUG-012 |
 | REQ-CKT1-05 | Checkout Access Restriction | TC-408 | ❌ Failed | BUG-010 |
 
----
+
 
 ## Checkout Step Two (Overview)
 
@@ -86,7 +86,6 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-CKT2-05 | Order Completion & Cancellation | TC-510, TC-511 | ✅ Passed | — |
 | REQ-CKT2-05 | Order Completion & Cancellation | TC-512 | ❌ Failed | BUG-014 |
 
----
 
 ## Checkout Complete
 
@@ -98,7 +97,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-CKTC-04 | Checkout Completion Access Control | TC-608 | ❌ Failed | BUG-015 |
 | REQ-CKTC-04 | Checkout Completion Access Control | TC-609 | ❌ Failed | BUG-016 |
 
----
+
 
 ## Logout & Session Management
 
@@ -109,7 +108,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 | REQ-SESS-03 | Cart Persistence & Isolation | TC-708 | ✅ Passed | — |
 | REQ-SESS-03 | Cart Persistence & Isolation | TC-709 | ❌ Failed | BUG-017 |
 
----
+
 
 ## Coverage Summary
 
@@ -117,6 +116,6 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 - **Total Test Cases:** 80
 - **Passed:** 58
 - **Failed:** 22
-- **Requirement Coverage:** 100% — every requirement is mapped to at least one test case
-- **Total Defects Traced:** 18 (BUG-001 through BUG-018), covering all 22 failed test cases
+- **Requirement Coverage:** 100% (every requirement is mapped to at least one test case)
+- **Total Unique Defects Traced:** 18 (BUG-001 through BUG-018), covering all 22 failed test cases
 - **Defects Linked to Multiple Test Cases:** BUG-001 (TC-008, TC-110), BUG-005 (TC-111, TC-306), BUG-007 (TC-210, TC-305), BUG-010 (TC-309, TC-408)
