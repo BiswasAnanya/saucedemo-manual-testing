@@ -12,7 +12,7 @@
 
 ## Description
 
-Product images doesn't adhere with products when using `problem_user`. The displayed image does not consistently match the corresponding product name. Rather every product displayed on the Inventory page uses the same image, regardless of the actual product. 
+Product images do not correspond correctly to their products when using `problem_user`. Every product displayed on the Inventory page uses the same image, regardless of the actual product.
 
 ## Preconditions
 
