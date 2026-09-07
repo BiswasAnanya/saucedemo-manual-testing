@@ -42,7 +42,7 @@ The **Remove** button is unresponsive. The product remains in the cart, and the 
 
 ## Notes
 
-Users cannot remove products directly from the Product Details page, forcing them to navigate to another page or preventing item removal entirely. 
+Users cannot remove products directly from the Product Inventory page, forcing them to navigate to another page or preventing item removal entirely. 
 This negatively impacts core shopping cart functionality and user experience.
 
 ---
