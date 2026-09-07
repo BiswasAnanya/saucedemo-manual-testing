@@ -19,11 +19,18 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-AUTH-01 | System shall authenticate users based on username and password, allowing valid predefined users to log in and rejecting invalid attempts with appropriate error feedback. | Valid credentials → login succeeds; wrong password → rejected with error; blank username → required-field error; unregistered credentials → rejected; locked-out account → login blocked; special-behavior users can log in |
-| REQ-AUTH-02 | System shall load the Inventory page within an acceptable response time following a successful login. | Inventory page loads within acceptable time |
-| REQ-AUTH-03 | System shall restrict access to authenticated pages unless a valid session exists. | No session → redirected to Login page |
+| REQ‑AUTH‑01 | System shall authenticate users based on username and password, allowing valid predefined users to log in and rejecting invalid attempts with appropriate error feedback. | Valid&nbsp;credentials&nbsp;→&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;→&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;→&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;→&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;→&nbsp;login&nbsp;blocked<br>Special-behavior&nbsp;users&nbsp;can&nbsp;log&nbsp;in |
+| REQ‑AUTH‑02 | System shall load the Inventory page within an acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
+| REQ‑AUTH‑03 | System shall restrict access to authenticated pages unless a valid session exists. | No&nbsp;session&nbsp;→&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
----
+
+## Authentication / Login
+
+| Req ID | Requirement | Acceptance Criteria |
+|---|---|---|
+| REQ‑AUTH‑01 | System shall authenticate users based on username<br>and password, allowing valid predefined users<br>to log in and rejecting invalid attempts with<br>appropriate error feedback. | Valid&nbsp;credentials&nbsp;→&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;→&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;→&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;→&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;→&nbsp;login&nbsp;blocked<br>Special-behavior&nbsp;users&nbsp;can&nbsp;log&nbsp;in |
+| REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
+| REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;→&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
 ## Product Inventory
 
