@@ -1,15 +1,10 @@
 # Requirement Analysis – SauceDemo
 
-
 ## Purpose
 
 The purpose of this requirements analysis is to establish a clear and testable understanding of the expected behavior of the SauceDemo application before test design and execution.
 
 Because SauceDemo does not provide formal requirements, the requirements were reverse-engineered from observed application behavior and user workflows. They define the key functional requirements, business rules, validation rules, navigation behavior, and expected system responses, and serve as the basis for test case design and traceability.
-
-## Application Overview
-
-SauceDemo (Swag Labs) is a sample e-commerce application covering login, product browsing, cart management, checkout, and logout. Predefined users simulate different application behaviors, including `problem_user`, `error_user`, `performance_glitch_user`, and `visual_user`.
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
@@ -107,7 +102,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 ## Non-Functional Observations
 
-This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here — a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
+This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here; a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
 
 | Category | Related Functional Requirement(s) | Observation |
 |---|---|---|
@@ -117,8 +112,8 @@ This project's test design used SauceDemo's predefined special users (`problem_u
 
 ## Out of Scope
 
-- **Compatibility** — No cross-browser or cross-device testing was performed.
-- **Load/Performance testing** — Performance observations were limited to manual, single-user page-load checks.
+- **Compatibility:** No cross-browser or cross-device testing was performed.
+- **Load/Performance testing:** Performance observations were limited to manual, single-user page-load checks.
 
 ## Assumptions
 
