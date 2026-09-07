@@ -30,7 +30,8 @@ The Inventory page should maintain the expected layout, spacing, alignment, and 
 
 ## Actual Result
 
-Visual and UI inconsistencies are present on the Inventory page for `visual_user`.
+Visual and UI inconsistencies are present on the Inventory page for `visual_user`, including incorrect spacing and broken margins between elements,
+the cart icon displayed in an unexpected position on the page, and broken/overlapping text.
 
 ## Evidence
 
