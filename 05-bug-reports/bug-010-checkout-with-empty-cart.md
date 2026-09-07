@@ -12,7 +12,7 @@
 
 ## Description
 
-The application `standard_user` to proceed to the Checkout page after removing all products from the cart, even though the cart is empty.
+The application allows `standard_user` to proceed to the Checkout page after removing all products from the cart, even though the cart is empty.
 
 ## Preconditions
 
@@ -41,7 +41,6 @@ The user can proceed to the **Checkout** page even though the cart is empty.
 
 ![Bug evidence](../Screenshots/bug-010.png)
 
-## Note
 
 ## Notes
 
