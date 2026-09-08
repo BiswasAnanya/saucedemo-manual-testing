@@ -15,7 +15,26 @@ This repository contains the test cases, execution results, defect documentation
 - Test automation with Playwright/TypeScript
 
 ## 📂 Repository Structure
-TBA
+
+saucedemo-manual-testing/
+├── 01-test-plan/
+│   └── test-plan.md
+├── 02-requirements-analysis/
+│   └── requirement-analysis.md
+├── 03-test-suites/
+│   └── (8 feature-wise test suites)
+├── 04-smoke-testing/
+│   └── smoke-test-suite.md
+├── 05-bug-reports/
+│   └── (18 individual defect reports)
+├── 06-screenshots/
+│   └── (supporting evidence per defect)
+├── 07-requirement-traceability/
+│   └── rtm.md
+├── 08-reports/
+│   ├── test-execution-report.md
+│   └── test-summary-report.md
+└── README.md
 
 
 ## 📈 Project Status
