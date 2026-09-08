@@ -2,7 +2,7 @@
 
 **Status:** Open
 
-**Severity:** Medium
+**Severity:** Low
 
 **Priority:** P2
 
