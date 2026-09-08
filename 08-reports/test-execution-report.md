@@ -74,21 +74,21 @@ Several failures recur across multiple suites or share a common root cause, indi
 
 ## Defect Summary
 
-A total of **22 test-case failures** were identified during execution. These failures resulted in **18 unique defects** being reported and documented in `/defects`.
+A total of 22 test-case failures were identified during execution. These failures resulted in 18 unique defects being reported and documented in `/05-bug-reports`.
 
-The remaining **4 failed test cases were duplicate manifestations or alternate entry points of existing defects** and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases.
+The remaining 4 failed test cases were duplicate manifestations or alternate entry points of existing defects and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases. See the [RTM](../07-rtm/rtm.md) for the full requirement-to-test-case-to-defect mapping.
 
 ### Severity Distribution
 
-| Severity  | Number of Defects | Percentage |
-| --------- | ----------------: | ---------: |
-| Critical  |                 1 |      5.56% |
-| High      |                 8 |     44.44% |
-| Medium    |                 7 |     38.89% |
-| Low       |                 2 |     11.11% |
-| **Total** |            **18** |   **100%** |
+| Severity | Number of Defects | Percentage |
+|---|---|---|
+| Critical | 2 | 11.11% |
+| High | 11 | 61.11% |
+| Medium | 2 | 11.11% |
+| Low | 3 | 16.67% |
+| **Total** | **18** | **100%** |
 
-Overall, **9 of the 18 reported defects (50.00%) are classified as Critical or High severity**, indicating that a significant portion of the identified defects has a substantial impact on core functionality, checkout processing, data isolation, or other important user workflows.
+Overall, 13 of the 18 reported defects (72.22%) are classified as Critical or High severity, indicating that a significant majority of the identified defects have a substantial impact on core functionality, checkout processing, data isolation, or other important user workflows.
 
 See `/05-bug-reports` for the individual bug reports and supporting evidence.
 
