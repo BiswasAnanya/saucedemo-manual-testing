@@ -12,7 +12,7 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
-| REQ-AUTH-01 | User Authentication | TC-001–007, TC-009, TC-010 | ✅ Passed | — |
+| REQ-AUTH-01 | User Authentication | TC-001 – TC-007, TC-009, TC-010 | ✅ Passed | — |
 | REQ-AUTH-02 | Login Performance | TC-008 | ❌ Failed | BUG-001 |
 | REQ-AUTH-03 | Session Protection | TC-011 | ✅ Passed | — |
 
@@ -118,4 +118,8 @@ Reference: [Requirement Analysis](../02-requirement-analysis/requirement-analysi
 - **Failed:** 22
 - **Requirement Coverage:** 100% (every requirement is mapped to at least one test case)
 - **Total Unique Defects Traced:** 18 (BUG-001 through BUG-018), covering all 22 failed test cases
-- **Defects Linked to Multiple Test Cases:** BUG-001 (TC-008, TC-110), BUG-005 (TC-111, TC-306), BUG-007 (TC-210, TC-305), BUG-010 (TC-309, TC-408)
+- **Defects Linked to Multiple Test Cases:**
+  - BUG-001 (TC-008, TC-110),
+  - BUG-005 (TC-111, TC-306),
+  - BUG-007 (TC-210, TC-305),
+  - BUG-010 (TC-309, TC-408)
