@@ -64,10 +64,13 @@ The Authentication/Login suite achieved the highest pass rate at 90.91%, with on
 
 ## Cross-Cutting Observations
 
-Several failures recur across multiple suites, indicating related behavioral patterns rather than isolated test-case failures:
+Several failures recur across multiple suites or share a common root cause, indicating related behavioral patterns rather than isolated test-case failures:
 
-* **Checkout flow state-validation bypass** – observed at multiple entry points, including checkout initiation with an empty cart and direct access to checkout pages, indicating that the application does not consistently enforce checkout sequence prerequisites.
-* **problem_user product data/image mismatch** – observed consistently across Product Inventory, Product Detail, and Shopping Cart.
+- **Checkout flow state-validation bypass** – observed at multiple entry points, including checkout initiation with an empty cart and direct access to Checkout Step One, Step Two, and Complete pages, indicating that the application does not consistently enforce checkout sequence prerequisites (BUG-010, BUG-013, BUG-015).
+- **Cross-user cart data isolation failure** – cart contents persist across different user sessions instead of resetting per user, exposing one user's cart data to another (BUG-017). This is the most significant defect identified during execution.
+- **`problem_user` product data/image mismatch** – observed consistently across Product Inventory, Product Detail, and Shopping Cart (BUG-002, BUG-007).
+- **Checkout Step One field-level defect and downstream impact** – an unresponsive Last Name field prevents `problem_user` from completing customer information, which in turn blocks checkout progression entirely (BUG-011, BUG-012).
+- **Post-order state management** – browser Back navigation after order completion restores a stale, resubmittable order state, distinct from the access-control issues above (BUG-016).
 
 ## Defect Summary
 
