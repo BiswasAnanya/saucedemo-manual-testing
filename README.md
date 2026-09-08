@@ -39,19 +39,6 @@ saucedemo-manual-testing/
 ```
 
 
-## 📈 Project Status
-
-| Activity              | Status         |
-| --------------------- | -------------- |
-| Test Plan             | ✅ Completed    |
-| Test Cases            | ✅ Completed |
-| Smoke Suite           | ✅ Completed    |
-| Manual Execution      | ✅ Completed |
-| Defect Reporting      | ✅ Completed |
-| RTM      | 🔄 In progress |
-| Test Summary          | 🔄 In progress      |
-| Playwright Automation | ⏳ Planned      |
-
 ## ⭐ QA Highlights
 
 * 80 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
