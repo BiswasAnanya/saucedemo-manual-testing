@@ -1,4 +1,51 @@
-## TBA
+# Test Summary Report – SauceDemo
+
+**Reference:** Test Plan TP-SAUCEDEMO-2026-001
+
+**Project:** SauceDemo-Manual Testing Project
+
+**Test Period:** [Start Date – End Date]
+
+**Tester/Author:** Ananya Biswas
+
+## 1. Summary
+
+Briefly summarize what was tested, the overall result, and the purpose of the testing.
+
+## 2. Test Results
+
+| Metric | Result |
+|---|---:|
+| Total Test Cases | 80 |
+| Passed | 58 |
+| Failed | 22 |
+| Pass Rate | 72.50% |
+| Reported Defects | 18 |
+| Overall Status | ⚠️ Partially Passed |
+
+## 3. Key Quality Findings
+
+- [Major finding]
+- [Major finding]
+- [Major finding]
+
+## 4. Key Risks / Quality Concerns
+
+- [Risk with business/user impact]
+- [Risk with business/user impact]
+- [Risk with business/user impact]
+
+## 5. Recommendations
+
+- [Recommended next action]
+- [Recommended next action]
+- [Recommended next action]
+
+## 6. Conclusion
+
+Final assessment of the application's quality based on the completed testing,
+including whether the application is suitable for release / further testing /
+automation / regression.
 
 | Theme                                                                      | Test Cases                                     | Severity Signal                                                                        |
 | -------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------- |
