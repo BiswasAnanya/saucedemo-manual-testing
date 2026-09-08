@@ -16,6 +16,7 @@ This repository contains the test cases, execution results, defect documentation
 
 ## 📂 Repository Structure
 
+```
 saucedemo-manual-testing/
 ├── 01-test-plan/
 │   └── test-plan.md
@@ -26,7 +27,7 @@ saucedemo-manual-testing/
 ├── 04-smoke-testing/
 │   └── smoke-test-suite.md
 ├── 05-bug-reports/
-│   └── (18 individual defect reports)
+│   └── (18 individual defect reports + index)
 ├── 06-screenshots/
 │   └── (supporting evidence per defect)
 ├── 07-requirement-traceability/
@@ -35,6 +36,7 @@ saucedemo-manual-testing/
 │   ├── test-execution-report.md
 │   └── test-summary-report.md
 └── README.md
+```
 
 
 ## 📈 Project Status
