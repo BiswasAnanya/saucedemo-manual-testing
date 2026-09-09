@@ -1,6 +1,7 @@
 # SauceDemo Manual Testing Project
 
-A manual QA portfolio project demonstrating the end-to-end testing of the SauceDemo e-commerce application; including functional, negative, UI, and user-specific test scenarios.
+A comprehensive manual QA portfolio project demonstrating the end-to-end testing of the [SauceDemo](https://www.saucedemo.com/) e-commerce web application; including functional, negative, UI, and user-specific test scenarios.
+
 The project simulates a structured software testing process covering test planning, requirement analysis, test design, smoke testing, test execution, defect reporting, traceability, and test summarization.
 
 **Test Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
@@ -12,7 +13,6 @@ Application: SauceDemo
 Website: https://www.saucedemo.com/
 
 Type: Demo e-commerce web application
-
 
 
 ## 📑 Explore the Project
@@ -31,11 +31,10 @@ Type: Demo e-commerce web application
 - Test planning & strategy (risk-based approach)
 - Reverse-engineered requirement analysis with acceptance criteria and full requirement-to-defect traceability (RTM)
 - Feature-wise manual test suite design (80 test cases across 8 suites) covering positive, negative & edge-case scenarios
-- Smoke testing
+- Smoke Test Suite design
 - Test Execution
 - Defect reporting
 - Test Summarization
-- Test automation with Playwright/TypeScript *(planned)*
 
 ## 📂 Repository Structure
 
@@ -65,11 +64,12 @@ saucedemo-manual-testing/
 
 * 80 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
 * 22 failures investigated and consolidated into 18 unique defects.
-* Re-tested unexpected behavior before reporting defects to avoid false positives.
-* Removed 4 planned scenarios (e.g., username/password whitespace and casing checks) where expected behavior could not be justified by a requirement.
+* Re-tested unexpected behavior before reporting defects to avoid false-positives.
+* Excluded 4 planned scenarios (e.g., username/password whitespace and casing checks) where expected behavior could not be justified by a requirement, rather than testing against assumptions.
 * Consolidated duplicate observations into single defects, e.g., the same `problem_user` product-image mismatch found on 4 separate pages was tracked as one defect (BUG-007), not four.
 * Applied severity/priority based on actual user impact, not just pass/fail count.
 * Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
+* Maintained full requirement-to-defect traceability via a dedicated [RTM](07-requirement-traceability/rtm.md), rather than treating defects as standalone findings.
 
 ## 🛠 Tools & Environment
   Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
