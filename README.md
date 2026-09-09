@@ -62,14 +62,14 @@ saucedemo-manual-testing/
 
 ## ⭐ QA Highlights
 
-* 80 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
-* 22 failures investigated and consolidated into 18 unique defects.
-* Re-tested unexpected behavior before reporting defects to avoid false-positives.
-* Excluded 4 planned scenarios (e.g., username/password whitespace and casing checks) where expected behavior could not be justified by a requirement, rather than testing against assumptions.
-* Consolidated duplicate observations into single defects, e.g., the same `problem_user` product-image mismatch found on 4 separate pages was tracked as one defect (BUG-007), not four.
+* 80 test cases executed across 8 different [test suites](03-test-suites).
+* 22 failures investigated, re-tested to rule out false positives, and consolidated into 18 unique defects.
+* Excluded 4 planned scenarios (e.g., username/password whitespace and casing checks) with no defined requirement to test against, rather than testing against assumptions.
+* Designed [Smoke test-suite](04-smoke-testing/smoke-test-suite.md) covering the critical user journey (login → checkout → confirmation), traceable back to the full suite.
 * Applied severity/priority based on actual user impact, not just pass/fail count.
 * Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
 * Maintained full requirement-to-defect traceability via a dedicated [RTM](07-requirement-traceability/rtm.md), rather than treating defects as standalone findings.
+* Produced separate Execution and Summary reports, distinguishing suite-by-suite results from overall quality assessment and release readiness.
 
 ## 🛠 Tools & Environment
   Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
