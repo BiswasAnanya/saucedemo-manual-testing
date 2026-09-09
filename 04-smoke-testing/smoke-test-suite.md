@@ -38,12 +38,12 @@ The **10 smoke tests** provide coverage of the application's most important func
 * **Post-Order State** – Cart clearance after order completion
 * **Session Management** – Successful logout
 
-## 4. Entry Criteria
+## 4. Entry & Exit Criteria
 
-### 4.1 Entry Criteria
+###  Entry Criteria
    - Application is deployed and accessible
 
-### 4.2 Exit Criteria
+###  Exit Criteria
    - All 10 smoke tests pass ⇒ Proceed with the full regression suite
    - Any Critical-priority failure ⇒ Hold further testing, investigate before proceeding
 
