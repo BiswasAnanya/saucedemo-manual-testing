@@ -4,9 +4,9 @@
 
 The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the [SauceDemo](https://www.saucedemo.com/) application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
 
-Because SauceDemo does not provide a formal requirements specification, the requirements in this document have been back-traced from observable application features, business behavior, user workflows, validation rules, navigation flows, and expected system responses. They provide the reference baseline for evaluating application behavior and for maintaining traceability throughout the QA process.
+Because [SauceDemo](https://www.saucedemo.com/) does not provide a formal requirements specification, the requirements in this document have been back-traced from observable application features, business behavior, user workflows, validation rules, navigation flows, and expected system responses. They provide the reference baseline for evaluating application behavior and for maintaining traceability throughout the QA process.
 
-[SauceDemo](https://www.saucedemo.com/) (Swag Labs) is a sample e-commerce web application used for QA practice. It covers core online shopping workflows — login, product browsing, cart management, checkout, and logout; along with a set of predefined users that simulate different application behaviors (`standard_user`, `locked_out_user`, `problem_user`, `error_user`, `performance_glitch_user`, `visual_user`).
+[SauceDemo](https://www.saucedemo.com/) (Swag Labs) is a sample e-commerce web application used for QA practice. It covers core online-shopping workflows such as- login, product browsing, cart management, checkout, and logout; along with a set of predefined users that simulate different application behaviors (`standard_user`, `locked_out_user`, `problem_user`, `error_user`, `performance_glitch_user`, `visual_user`).
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
