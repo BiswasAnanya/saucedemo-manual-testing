@@ -127,7 +127,7 @@ The predefined SauceDemo credentials/data will be used for testing rather than c
 
 | Severity | Definition |
 |---|---|
-| Critical | Blocks critical application functionality or causes major application failure. |
+| Critical | Blocks critical application functionality or causes major application failure and/or data integrity/leakage issue. |
 | High | Breaks major functionality but the application remains partially usable. |
 | Medium | Causes incorrect behavior or a significant usability/performance issue, but a workaround exists. |
 | Low | Minor functional, UI, or cosmetic issue with limited impact. |
@@ -171,7 +171,6 @@ To keep this portfolio project focused and practical, the following formal test-
 
 * Detailed test types
 * Test schedule
-* Test Scenarios
 * Risk assumptions
 * Approval
   
