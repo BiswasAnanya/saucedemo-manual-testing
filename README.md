@@ -4,15 +4,17 @@ A manual QA portfolio project testing the [SauceDemo](https://www.saucedemo.com)
 
 This repository contains the test cases, execution results, defect documentation, and supporting evidence created while testing the application's main user workflows.
 
-## 📌 What This Project Demonstrates
+**72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity**
 
+## 📌 What This Project Demonstrates
 - Test planning & strategy (risk-based approach)
-- Feature-wise manual test suite design (85 test-cases across 8 suites) covering positive, negative & edge-case scenarios
+- Reverse-engineered requirement analysis with acceptance criteria and full requirement-to-defect traceability (RTM)
+- Feature-wise manual test suite design (80 test cases across 8 suites) covering positive, negative & edge-case scenarios
 - Smoke testing
 - Test Execution
 - Defect reporting
 - Test Summarization
-- Test automation with Playwright/TypeScript
+- Test automation with Playwright/TypeScript *(planned)*
 
 ## 📂 Repository Structure
 
@@ -42,7 +44,7 @@ saucedemo-manual-testing/
 ## ⭐ QA Highlights
 
 * 80 test cases executed across authentication, inventory, cart, product detail, checkout, and session management.
-* 22 failures investigated and consolidated into 6 distinct defect types.
+* 22 failures investigated and consolidated into 18 unique defects.
 * Re-tested unexpected behavior before reporting defects to avoid false positives.
 * Removed scenarios where expected behavior could not be justified by a requirement.
 * Consolidated duplicate observations into single defects.
