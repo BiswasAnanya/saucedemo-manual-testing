@@ -8,16 +8,15 @@ This repository contains the test cases, execution results, defect documentation
 
 ## 📑 Explore the Project
 
-| Document | Description |
-|---|---|
-| [Test Plan](01-test-plan/test-plan.md) | Scope, approach, and strategy |
-| [Requirement Analysis](02-requirements-analysis/requirement-analysis.md) | Reverse-engineered functional requirements |
-| [Test Suites](03-test-suites/) | 80 test cases across 8 feature suites |
-| [Smoke Test Suite](04-smoke-testing/smoke-test-suite.md) | 11-case critical-path suite |
-| [Defect Reports](05-defect-reports/) | 18 individual bug reports |
-| [Requirement Traceability Matrix](07-requirement-traceability/rtm.md) | Requirement ↔ test case ↔ defect mapping |
-| [Test Execution Report](08-reports/test-execution-report.md) | Full results, findings, and defect analysis |
-| [Test Summary Report](08-reports/test-summary-report.md) | Overall quality assessment and recommendations |
+- [Test Plan](01-test-plan/test-plan.md) -> scope, approach, and strategy
+- [Requirement Analysis](02-requirements-analysis/requirement-analysis.md) -> reverse-engineered functional requirements
+- [Test Suites](03-test-suites/) -> 80 test cases across 8 feature suites
+- [Smoke Test Suite](04-smoke-testing/smoke-test-suite.md) -> 11-case critical-path suite
+- [Defect Reports](05-bug-reports/) -> 18 individual bug reports
+- [Requirement Traceability Matrix](07-requirement-traceability/rtm.md) -> requirement ↔ test case ↔ defect mapping
+- [Test Execution Report](08-reports/test-execution-report.md) -> full results, findings, and defect analysis
+- [Test Summary Report](08-reports/test-summary-report.md) -> overall quality assessment and recommendations
+
 
 ## 📌 What This Project Demonstrates
 - Test planning & strategy (risk-based approach)
@@ -62,3 +61,9 @@ saucedemo-manual-testing/
 * Consolidated duplicate observations into single defects, e.g., the same `problem_user` product-image mismatch found on 4 separate pages was tracked as one defect (BUG-007), not four.
 * Applied severity/priority based on actual user impact, not just pass/fail count.
 * Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
+
+## 🛠 Tools & Environment
+  Manual testing · Chrome (latest) · Markdown documentation · Playwright/TypeScript *(planned for automation)*
+
+## 👤 Author
+  Ananya Biswas — [LinkedIn](#) · [Portfolio](#)
