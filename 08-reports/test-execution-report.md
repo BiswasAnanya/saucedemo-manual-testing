@@ -60,9 +60,9 @@ The identified failures cover several areas, including:
 * Checkout state management
 * Session and cart data isolation
 
-The Shopping Cart suite has the highest failure rate at 55.56%, followed by Product Inventory at 50.00%  and Checkout: Step One at 37.50%.
+The [Shopping Cart](../03-test-suites/ts03-shopping-cart.md) suite has the highest failure rate at 55.56%, followed by [Product Inventory](../03-test-suites/ts01-product-inventory.md) at 50.00%  and [Checkout: Step One (Customer Information)](../03-test-suites/ts04-checkout-stepone-customerinfo.md) at 37.50%.
 
-The Authentication/Login suite achieved the highest pass rate at 90.91%, with only one failed test case related to direct access to the Inventory page without authentication.
+The [Authentication/Login](../03-test-suites/ts00-authentication-login.md) suite achieved the highest pass rate at 90.91%, with only one failed test case related to direct access to the Inventory page without authentication.
 
 ## Cross-Cutting Observations
 
