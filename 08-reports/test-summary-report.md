@@ -28,9 +28,9 @@ This report summarizes the overall outcome of manual functional testing performe
 
 ## 3. Key Quality Findings
 
-Testing surfaced several recurring behavioral patterns rather than isolated failures; see [Cross-Cutting Observations](https://github.com/BiswasAnanya/saucedemo-manual-testing/blob/main/08-reports/test-execution-report.md#5-cross-cutting-observations) in the Execution Report for full detail. Most notably:
+Testing surfaced several recurring behavioral patterns rather than isolated failures; see [Cross-Cutting Observations](https://github.com/BiswasAnanya/saucedemo-manual-testing/blob/main/08-reports/test-execution-report.md#5-cross-cutting-observations) in the [Test Execution Report](../08-reports/test-execution-report.md) for full detail. Most notably:
 
-- Checkout sequence prerequisites are not consistently enforced across multiple entry points (empty cart, direct URL access to checkout pages).
+- Checkout sequence prerequisites are not consistently enforced across multiple entry points (checkout possible with empty cart, direct URL access to checkout pages, etc.).
 - Cart data is not isolated between user sessions, the most severe finding of this project.
 - A subset of special-behavior test users (`problem_user`, `error_user`) surfaced consistent data-integrity and interaction defects across multiple pages.
 
@@ -39,7 +39,7 @@ Testing surfaced several recurring behavioral patterns rather than isolated fail
 | Exit Criteria | Met? | Notes |
 |---|---|---|
 | All planned test cases executed | ✅ | 80/80 executed; no tests blocked or skipped |
-| All identified defects logged with severity/priority | ✅ | 18 defects logged, see `/05-bug-reports` |
+| All identified defects logged with severity/priority | ✅ | 18 defects logged, see [Defect Reports](../05-bug-reports) |
 | No open defects blocking the critical path | ⚠️ | Core purchase flow (login → checkout → confirmation) remains functional for standard users; cross-user cart isolation is a residual concern |
 | Execution and Summary reports completed | ✅ | Both completed |
 | Smoke suite passes on the final build tested | ✅ | All 10 source test cases passed during full suite execution |
