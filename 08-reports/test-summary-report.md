@@ -1,6 +1,6 @@
 # Test Summary Report – SauceDemo
 
-**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-rtm/rtm.md)
+**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-requirement-traceability/requirements-traceability-matrix.md)
 
 **Project:** SauceDemo-Manual Testing Project
 
