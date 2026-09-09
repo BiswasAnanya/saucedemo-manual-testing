@@ -4,7 +4,9 @@
 
 **Project:** SauceDemo-Manual Testing Project
 
-**Test Period:** [Start Date – End Date]
+**Test Period:** 15 August, 2026 - 30 August, 2026
+
+**Report Date:** 30 August, 2026
 
 **Tester/Author:** Ananya Biswas
 
