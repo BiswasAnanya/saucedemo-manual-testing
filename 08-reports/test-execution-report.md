@@ -1,6 +1,6 @@
 # Test Execution Report – SauceDemo
 
-**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [RTM](../07-requirement-traceability/requirements-traceability-matrix.md)
+**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [RTM](../07-requirement-traceability/requirements-traceability-matrix.md) | [Defect Reports](../05-bug-reports)
 
 **Project:** SauceDemo-Manual Testing Project
 
@@ -74,7 +74,7 @@ Several failures recur across multiple suites or share a common root cause, indi
 
 ## Defect Summary
 
-A total of 22 test-case failures were identified during execution. These failures resulted in 18 unique defects being reported and documented in `/05-bug-reports`.
+A total of 22 test-case failures were identified during execution. These failures resulted in 18 unique defects being reported and documented in [Defect Reports](../05-bug-reports).
 
 The remaining 4 failed test cases were duplicate manifestations or alternate entry points of existing defects and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases. See the [RTM](../07-requirement-traceability/requirements-traceability-matrix.md) for the full requirement-to-test-case-to-defect mapping.
 
@@ -90,7 +90,7 @@ The remaining 4 failed test cases were duplicate manifestations or alternate ent
 
 Overall, 13 of the 18 reported defects (72.22%) are classified as Critical or High severity, indicating that a significant majority of the identified defects have a substantial impact on core functionality, checkout processing, data isolation, or other important user workflows.
 
-See `/05-bug-reports` for the individual bug reports and supporting evidence.
+See [Defect Reports](../05-bug-reports) for the individual bug reports and supporting evidence.
 
 ## Final Assessment
 
