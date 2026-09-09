@@ -1,16 +1,16 @@
 # Test Execution Report – SauceDemo
 
-**Reference:** Test Plan TP-SAUCEDEMO-2026-001
+**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [RTM](../07-rtm/rtm.md)
 
 **Project:** SauceDemo-Manual Testing Project
 
-**Build/Version Tested:** Live site as of July 2026
+**Build/Version Tested:** Live site as of August 2026
 
 **Tester/Author:** Ananya Biswas
 
 **Test Environment:** Chrome (latest), Linux
 
-**Report Date:** 15 July, 2026
+**Report Date:** 30 August, 2026
 
 ## Overview
 
