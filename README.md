@@ -1,10 +1,21 @@
 # SauceDemo Manual Testing Project
 
-A manual QA portfolio project testing the [SauceDemo](https://www.saucedemo.com) e-commerce app end-to-end; covering functional, negative, UI, and user-specific test scenarios.
+A manual QA portfolio project demonstrating the end-to-end testing of the SauceDemo e-commerce application; including functional, negative, UI, and user-specific test scenarios.
+The project simulates a structured software testing process covering test planning, requirement analysis, test design, smoke testing, test execution, defect reporting, traceability, and test summarization.
 
-This repository contains the test cases, execution results, defect documentation, and supporting evidence created while testing the application's main user workflows.
+## 🖥️ Application Under Test
 
-**Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
+Application: SauceDemo
+
+Website: https://www.saucedemo.com/
+
+Type: Demo e-commerce web application
+
+
+This project simulates a manual QA process testing the [SauceDemo](https://www.saucedemo.com) e-commerce app end-to-end; covering functional, negative, UI, and user-specific test scenarios.
+
+
+**Test Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
 
 ## 📑 Explore the Project
 
@@ -63,7 +74,7 @@ saucedemo-manual-testing/
 * Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
 
 ## 🛠 Tools & Environment
-  Manual testing · Chrome (latest) · Markdown documentation · Playwright/TypeScript *(planned for automation)*
+  Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
 
 ## 👤 Author
   Ananya Biswas — [LinkedIn](#) · [Portfolio](#)
