@@ -48,4 +48,4 @@ saucedemo-manual-testing/
 * Removed 4 planned scenarios (e.g., username/password whitespace and casing checks) where expected behavior could not be justified by a requirement.
 * Consolidated duplicate observations into single defects, e.g., the same `problem_user` product-image mismatch found on 4 separate pages was tracked as one defect (BUG-007), not four.
 * Applied severity/priority based on actual user impact, not just pass/fail count.
-* Documented downstream impact when defects affected later stages of the workflow — e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
+* Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
