@@ -4,7 +4,7 @@
 
 **Project:** SauceDemo-Manual Testing Project
 
-**Build/Version Tested:** Live site as of July 2026
+**Build/Version Tested:** Live site as of August 2026
 
 **Test Environment:** Chrome (latest), Linux
 
@@ -12,7 +12,7 @@
 
 **Author:** Ananya Biswas
 
-**Date:** July 2026
+**Date:** 15th August, 2026
 
 
 ## 1. Introduction
