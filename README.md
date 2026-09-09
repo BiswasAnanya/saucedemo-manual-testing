@@ -114,4 +114,4 @@ saucedemo-manual-testing/
   Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
 
 ## 👤 Author
-  Ananya Biswas — [LinkedIn](#) · [Portfolio](#)
+  Ananya Biswas — [LinkedIn](https://www.linkedin.com/in/ananya--biswas/) · [Portfolio](#)
