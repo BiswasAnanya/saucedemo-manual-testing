@@ -6,9 +6,9 @@
 
 **Build/Version Tested:** Live site as of August 2026
 
-**Tester/Author:** Ananya Biswas
-
 **Test Environment:** Chrome (latest), Linux
+
+**Tester/Author:** Ananya Biswas
 
 **Report Date:** 30 August, 2026
 
