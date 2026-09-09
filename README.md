@@ -111,7 +111,9 @@ saucedemo-manual-testing/
 * Produced separate [Test Execution Report](08-reports/test-execution-report.md) and [Test Summary Report](08-reports/test-summary-report.md), distinguishing suite-by-suite results from overall quality assessment and release readiness.
 
 ## 🛠 Tools & Environment
-  Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
 
+* Tools & Technologies: Chrome (latest), Linux, Markdown, Git/GitHub, Playwright/TypeScript*(planned for automation)*
+* AI Assistance: used for brainstorming and refining documentation
+  
 ## 👤 Author
-  Ananya Biswas — [LinkedIn](https://www.linkedin.com/in/ananya--biswas/) · [Portfolio](#)
+  Ananya Biswas · [LinkedIn](https://www.linkedin.com/in/ananya--biswas/) · [Portfolio](#)
