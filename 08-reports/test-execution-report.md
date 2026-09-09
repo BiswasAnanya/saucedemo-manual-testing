@@ -12,11 +12,11 @@
 
 **Report Date:** 30 August, 2026
 
-## Overview
+## 1. Overview
 
 This Test Execution Report summarizes the results of manual functional testing performed on the [SauceDemo](https://www.saucedemo.com/) (Swag Labs) web application. Testing covered the core e-commerce workflows defined in the Test Plan, including authentication, product inventory, product details, shopping cart, checkout, order completion, and logout/session management.
 
-## Overall Test Execution Result
+## 2. Overall Test Execution Result
 
 | Test Suite                                                                                            | Total Test Cases | Passed | Failed |  Pass Rate |  Fail Rate | Overall Status          |
 | ------------------------------------------------------------------------------------------------------| ---------------: | -----: | -----: | ---------: | ---------: | ----------------------- |
@@ -32,7 +32,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 
 
 
-## Key Execution Findings
+## 3. Key Execution Findings
 
 | Area                    | Observation                                                                                                                             |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 | Checkout: Complete      | Order completion and confirmation functionality passed, while direct access and browser Back behavior exposed state-management issues.  |
 | Logout/Session Handling | Core logout and session protection scenarios passed, while cross-user cart isolation failed.                                            |
           
-## Overall Execution Summary
+## 4. Overall Execution Summary
 
 The SauceDemo test execution achieved a **72.50%** pass rate, with 58 of 80 test cases passing and 22 failing across the eight test suites.
 
@@ -64,7 +64,7 @@ The [Shopping Cart](../03-test-suites/ts03-shopping-cart.md) suite has the highe
 
 The [Authentication/Login](../03-test-suites/ts00-authentication-login.md) suite achieved the highest pass rate at 90.91%, with only one failed test case related to direct access to the Inventory page without authentication.
 
-## Cross-Cutting Observations
+## 5. Cross-Cutting Observations
 
 Several failures recur across multiple suites or share a common root cause, indicating related behavioral patterns rather than isolated test-case failures:
 
@@ -74,7 +74,7 @@ Several failures recur across multiple suites or share a common root cause, indi
 - **Checkout Step One field-level defect and downstream impact** – an unresponsive Last Name field prevents `problem_user` from completing customer information, which in turn blocks checkout progression entirely (BUG-011, BUG-012).
 - **Post-order state management** – browser Back navigation after order completion restores a stale, resubmittable order state, distinct from the access-control issues above (BUG-016).
 
-## Defect Summary
+## 6. Defect Summary
 
 A total of 22 test-case failures were identified during execution. These failures resulted in 18 unique defects being reported and documented in [Defect Reports](../05-bug-reports).
 
@@ -94,7 +94,7 @@ Overall, 13 of the 18 reported defects (72.22%) are classified as Critical or Hi
 
 See [Defect Reports](../05-bug-reports) for the individual bug reports and supporting evidence.
 
-## Final Assessment
+## 7. Final Assessment
 
 **Overall Status: ⚠️ Partially Passed**
 
