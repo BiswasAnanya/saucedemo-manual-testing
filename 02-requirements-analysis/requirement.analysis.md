@@ -1,8 +1,12 @@
 # Requirement Analysis for SauceDemo Application
 
-The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the SauceDemo application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
+## Purpose & Overview
+
+The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the [SauceDemo](https://www.saucedemo.com/) application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
 
 Because SauceDemo does not provide a formal requirements specification, the requirements in this document have been back-traced from observable application features, business behavior, user workflows, validation rules, navigation flows, and expected system responses. They provide the reference baseline for evaluating application behavior and for maintaining traceability throughout the QA process.
+
+[SauceDemo](https://www.saucedemo.com/) (Swag Labs) is a sample e-commerce web application used for QA practice. It covers core online shopping workflows — login, product browsing, cart management, checkout, and logout; along with a set of predefined users that simulate different application behaviors (`standard_user`, `locked_out_user`, `problem_user`, `error_user`, `performance_glitch_user`, `visual_user`).
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
@@ -95,7 +99,6 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑SESS‑03 | System shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
 
 
-
 ## Non-Functional Observations
 
 This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here; a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
@@ -115,4 +118,4 @@ This project's test design used SauceDemo's predefined special users (`problem_u
 
 - SauceDemo does not provide official requirement documentation; requirements were reverse-engineered from observed application behavior.
 - Where behavior was ambiguous or inconsistent, requirements reflect the intended behavior for standard usage, with deviations treated as defects.
-- Requirements reflect observations made in July 2026 and may not account for later changes to the live site.
+- Requirements reflect observations made in August 2026 and may not account for later changes to the live site.
