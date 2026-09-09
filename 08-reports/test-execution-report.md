@@ -23,7 +23,7 @@ This Test Execution Report summarizes the results of manual functional testing p
 | [Authentication/Login](../03-test-suites/ts00-authentication-login.md)                                |               11 |     10 |      1 |     90.91% |      9.09% | ⚠️ Partially Passed     |
 | [Product Inventory](../03-test-suites/ts01-product-inventory.md)                                      |               12 |      6 |      6 |     50.00% |     50.00% | ⚠️ Partially Passed     |
 | [Product Detail](../03-test-suites/ts02-product-detail.md)                                            |               10 |      8 |      2 |     80.00% |     20.00% | ⚠️ Partially Passed     |
-| [Shopping Cart](03-test-suites/ts03-shopping-cart.md)                                                 |                9 |      4 |      5 |     44.44% |     55.56% | ⚠️ Partially Passed     |
+| [Shopping Cart](../03-test-suites/ts03-shopping-cart.md)                                              |                9 |      4 |      5 |     44.44% |     55.56% | ⚠️ Partially Passed     |
 | [Checkout: Step One (Customer Information)](../03-test-suites/ts04-checkout-stepone-customerinfo.md)  |                8 |      5 |      3 |     62.50% |     37.50% | ⚠️ Partially Passed     |
 | [Checkout: Step Two (Overview)](../03-test-suites/ts05-checkout-steptwo-overview.md)                  |               12 |     10 |      2 |     83.33% |     16.67% | ⚠️ Partially Passed     |
 | [Checkout: Complete](../03-test-suites/ts06-checkout-stepthree-complete.md)                           |                9 |      7 |      2 |     77.78% |     22.22% | ⚠️ Partially Passed     |
