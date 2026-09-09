@@ -36,13 +36,13 @@ This Test Execution Report summarizes the results of manual functional testing p
 
 | Area                    | Observation                                                                                                                             |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication          | Core login scenarios passed, with a failure identified in direct access to the Inventory page without authentication.                   |
+| Authentication/Login    | Core login scenarios passed, with a failure identified in direct access to the Inventory page without authentication.                   |
 | Product Inventory       | Core inventory functionality passed, while several special-user scenarios exposed product image, sorting, UI, and interaction defects.  |
 | Product Detail          | Most product detail functionality passed, with failures identified for invalid product handling and `problem_user` behavior.            |
 | Shopping Cart           | Core cart functionality passed, but multiple special-user and empty-cart scenarios failed.                                              |
-| Checkout: Step One       | Basic checkout functionality passed, while `problem_user` field interaction and checkout progression issues were identified.           |
-| Checkout: Step Two       | Most overview functionality passed, with failures related to direct page access and error_user checkout completion.                    |
-| Checkout: Complete       | Order completion and confirmation functionality passed, while direct access and browser Back behavior exposed state-management issues. |
+| Checkout: Step One      | Basic checkout functionality passed, while `problem_user` field interaction and checkout progression issues were identified.            |
+| Checkout: Step Two      | Most overview functionality passed, with failures related to direct page access and error_user checkout completion.                     |
+| Checkout: Complete      | Order completion and confirmation functionality passed, while direct access and browser Back behavior exposed state-management issues.  |
 | Logout/Session Handling | Core logout and session protection scenarios passed, while cross-user cart isolation failed.                                            |
           
 ## Overall Execution Summary
