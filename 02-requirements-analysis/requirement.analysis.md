@@ -16,7 +16,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to log in <br> and rejecting invalid attempts with<br>appropriate error feedback. | Valid&nbsp;credentials&nbsp;🠂&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;🠂&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;🠂&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;🠂&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;🠂&nbsp;login&nbsp;blocked |
+| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to log in <br> and rejecting invalid attempts with appropriate error feedback. | Valid&nbsp;credentials&nbsp;🠂&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;🠂&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;🠂&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;🠂&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;🠂&nbsp;login&nbsp;blocked |
 | REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
 | REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;🠂&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
