@@ -1,6 +1,6 @@
 # Requirement Analysis for SauceDemo Application
 
-## Purpose & Overview
+## 1. Purpose & Overview
 
 The purpose of this requirements analysis is to establish a clear, testable, and traceable requirement baseline for the [SauceDemo](https://www.saucedemo.com/) application. The requirements define the expected functional behavior, business rules, validation rules, navigation behavior, and system responses used as the basis for test design.
 
@@ -10,9 +10,9 @@ Because [SauceDemo](https://www.saucedemo.com/) does not provide a formal requir
 
 Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
-## Functional Requirements
+## 2. Functional Requirements
 
-### Authentication / Login
+### 2.1 Authentication / Login
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -22,7 +22,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 
 
-### Product Inventory
+### 2.2 Product Inventory
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -36,7 +36,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 
 
-### Product Detail
+### 2.3 Product Detail
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -46,7 +46,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑DET‑04 | System shall gracefully handle access to invalid or non-existent products and prevent them from proceeding through checkout. | Invalid&nbsp;product&nbsp;URL&nbsp;displays&nbsp;"ITEM&nbsp;NOT&nbsp;FOUND"<br>Invalid&nbsp;products&nbsp;cannot&nbsp;proceed&nbsp;through&nbsp;the&nbsp;checkout&nbsp;flow |
 
 
-### Shopping Cart
+### 2.4 Shopping Cart
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -56,7 +56,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑CART‑04 | System shall prevent users from proceeding to checkout when the cart is empty. | Checkout&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
 
-### Checkout Step One (Customer Information)
+### 2.5 Checkout Step One (Customer Information)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -67,7 +67,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑CKT1‑05 | System shall prevent access to Checkout Step One when the cart is empty. | Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
 
-### Checkout Step Two (Overview)
+### 2.6 Checkout Step Two (Overview)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -79,7 +79,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 
 
-### Checkout Complete
+### 2.7 Checkout Complete
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -90,7 +90,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 
 
-### Logout & Session Management
+### 2.8 Logout & Session Management
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
@@ -99,7 +99,7 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 | REQ‑SESS‑03 | System shall persist cart contents across a re-login for the same user, and maintain independent cart state per user session. | Cart&nbsp;items&nbsp;persist&nbsp;for&nbsp;the&nbsp;same&nbsp;user&nbsp;after&nbsp;logout/login<br>Cart&nbsp;data&nbsp;is&nbsp;isolated&nbsp;between&nbsp;different&nbsp;user&nbsp;sessions |
 
 
-## Non-Functional Observations
+## 3. Non-Functional Observations
 
 This project's test design used SauceDemo's predefined special users (`problem_user`, `error_user`, `performance_glitch_user`, `visual_user`) to simulate different failure conditions. Because each of these users is exercised through ordinary functional test cases, the line between functional and non-functional testing is naturally blurred here; a login test, for example, is still a functional check, but when run against `performance_glitch_user` it also surfaces a performance-quality observation. Rather than duplicating these as separate non-functional requirements, they are cross-referenced below against the functional requirements that already cover them.
 
@@ -109,12 +109,12 @@ This project's test design used SauceDemo's predefined special users (`problem_u
 | Usability / Responsiveness | REQ‑INV‑06, REQ‑CART‑01, REQ‑CART‑02, REQ‑CKT2‑05 | Unresponsive&nbsp;UI&nbsp;elements&nbsp;(buttons,&nbsp;links)&nbsp;for&nbsp;`error_user` |
 | UI / Visual Consistency | REQ‑INV‑04, REQ‑CART‑03 | Layout&nbsp;and&nbsp;alignment&nbsp;inconsistencies&nbsp;for&nbsp;`visual_user` |
 
-## Out of Scope
+## 4. Out of Scope
 
 - **Compatibility:** No cross-browser or cross-device testing was performed.
 - **Load/Performance testing:** Performance observations were limited to manual, single-user page-load checks.
 
-## Assumptions
+## 5. Assumptions
 
 - SauceDemo does not provide official requirement documentation; requirements were reverse-engineered from observed application behavior.
 - Where behavior was ambiguous or inconsistent, requirements reflect the intended behavior for standard usage, with deviations treated as defects.
