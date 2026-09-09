@@ -14,7 +14,7 @@
 
 ## Overview
 
-This Test Execution Report summarizes the results of manual functional testing performed on the SauceDemo (Swag Labs) web application. Testing covered the core e-commerce workflows defined in the Test Plan, including authentication, product inventory, product details, shopping cart, checkout, order completion, and logout/session management.
+This Test Execution Report summarizes the results of manual functional testing performed on the [SauceDemo](https://www.saucedemo.com/) (Swag Labs) web application. Testing covered the core e-commerce workflows defined in the Test Plan, including authentication, product inventory, product details, shopping cart, checkout, order completion, and logout/session management.
 
 ## Overall Test Execution Result
 
@@ -76,7 +76,7 @@ Several failures recur across multiple suites or share a common root cause, indi
 
 A total of 22 test-case failures were identified during execution. These failures resulted in 18 unique defects being reported and documented in `/05-bug-reports`.
 
-The remaining 4 failed test cases were duplicate manifestations or alternate entry points of existing defects and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases. See the [RTM](../07-rtm/rtm.md) for the full requirement-to-test-case-to-defect mapping.
+The remaining 4 failed test cases were duplicate manifestations or alternate entry points of existing defects and were therefore not logged as separate defects. This ensures that each underlying issue is represented by a single defect ticket while maintaining traceability to all affected test cases. See the [RTM](../07-requirement-traceability/requirements-traceability-matrix.md) for the full requirement-to-test-case-to-defect mapping.
 
 ### Severity Distribution
 
