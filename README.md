@@ -3,6 +3,8 @@
 A manual QA portfolio project demonstrating the end-to-end testing of the SauceDemo e-commerce application; including functional, negative, UI, and user-specific test scenarios.
 The project simulates a structured software testing process covering test planning, requirement analysis, test design, smoke testing, test execution, defect reporting, traceability, and test summarization.
 
+**Test Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
+
 ## 🖥️ Application Under Test
 
 Application: SauceDemo
@@ -12,10 +14,6 @@ Website: https://www.saucedemo.com/
 Type: Demo e-commerce web application
 
 
-This project simulates a manual QA process testing the [SauceDemo](https://www.saucedemo.com) e-commerce app end-to-end; covering functional, negative, UI, and user-specific test scenarios.
-
-
-**Test Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
 
 ## 📑 Explore the Project
 
