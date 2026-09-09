@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This document traces each requirement defined in the [Requirement Analysis](02-requirements-analysis/requirement.analysis.md) to the test case(s) that validate it, records the execution status of each test case, and links any failure to its corresponding defect report. It serves as the single point of reference for verifying requirement coverage and understanding the current quality status of the application.
+This document traces each requirement defined in the [Requirement Analysis](../02-requirements-analysis/requirement.analysis.md) to the test case(s) that validate it, records the execution status of each test case, and links any failure to its corresponding defect report. It serves as the single point of reference for verifying requirement coverage and understanding the current quality status of the application.
 
-Reference: [Requirement Analysis](02-requirements-analysis/requirement.analysis.md) | [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Defect Reports](../05-bug-reports/)
+Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analysis.md) | [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Defect Reports](../05-bug-reports/)
 
 ---
 
