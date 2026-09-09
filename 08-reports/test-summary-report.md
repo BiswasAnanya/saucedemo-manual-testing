@@ -1,6 +1,6 @@
 # Test Summary Report – SauceDemo
 
-**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-requirement-traceability/requirements-traceability-matrix.md)
+**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-requirement-traceability/requirements-traceability-matrix.md) | [Defect Reports](../05-bug-reports)
 
 **Project:** SauceDemo-Manual Testing Project
 
@@ -42,7 +42,7 @@ Testing surfaced several recurring behavioral patterns rather than isolated fail
 | All identified defects logged with severity/priority | ✅ | 18 defects logged, see `/05-bug-reports` |
 | No open defects blocking the critical path | ⚠️ | Core purchase flow (login → checkout → confirmation) remains functional for standard users; cross-user cart isolation is a residual concern |
 | Execution and Summary reports completed | ✅ | Both completed |
-| Smoke suite passes on the final build tested | ✅ | Passed |
+| Smoke suite passes on the final build tested | ✅ | All 10 source test cases passed during full suite execution |
 
 ## 5. Key Risks / Quality Concerns
 
