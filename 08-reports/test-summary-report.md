@@ -12,7 +12,7 @@
 
 ## 1. Summary
 
-This report summarizes the overall outcome of manual functional testing performed on the SauceDemo web application, covering authentication, product browsing, cart management, checkout, and session handling. It presents the overall quality assessment, evaluates the project's exit criteria, and outlines the key risks and recommendations based on the completed test execution.
+This report summarizes the overall outcome of manual functional testing performed on the [SauceDemo](https://www.saucedemo.com/) web application, covering authentication, product browsing, cart management, checkout, and session handling. It presents the overall quality assessment, evaluates the project's exit criteria, and outlines the key risks and recommendations based on the completed test execution.
 
 ## 2. Test Results
 
