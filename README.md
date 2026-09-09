@@ -36,7 +36,7 @@ Type: Demo e-commerce web application
 - Defect reporting
 - Test Summarization
 
-📂 Repository Structure??
+📂 Repository Structure
 ```
 saucedemo-manual-testing/
 ├── 01-test-plan
