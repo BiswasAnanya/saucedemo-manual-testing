@@ -55,8 +55,8 @@ Testing surfaced several recurring behavioral patterns rather than isolated fail
 
 - Prioritize fixes for the Critical and High severity defects above before considering the application release-ready, particularly the cross-user cart isolation and checkout-crash issues.
 - Conduct a regression pass focused on the checkout flow once the state-validation and crash defects are addressed.
-- The finalized smoke suite is well-positioned to serve as the starting point for Playwright/TypeScript automation, given its coverage of the critical user journey.
-
+- Consider automating the Smoke Test Suite as a starting point, to enable faster execution and reduce repetitive manual testing effort.
+- 
 ## 7. Conclusion
 
 The SauceDemo application's core e-commerce workflows are functional for standard usage, but the presence of a critical cross-session data-isolation defect and multiple checkout state-validation gaps means the application is **not yet suitable for release** in its current state. It is, however, suitable for continued testing, defect remediation, and as a baseline for automated regression coverage.
