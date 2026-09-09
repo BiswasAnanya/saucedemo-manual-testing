@@ -20,7 +20,7 @@ Type: Demo e-commerce web application
 - [Test Plan](01-test-plan/test-plan.md) -> scope, approach, and strategy
 - [Requirement Analysis](02-requirements-analysis/requirement.analysis.md) -> reverse-engineered functional requirements
 - [Test Suites](03-test-suites/) -> 80 test cases across 8 feature suites
-- [Smoke Test Suite](04-smoke-testing/smoke-test-suite.md) -> 11-case critical-path suite
+- [Smoke Test Suite](04-smoke-testing/smoke-test-suite.md) -> 10 test-cases for critical-path
 - [Defect Reports](05-bug-reports/) -> 18 individual bug reports
 - [Requirement Traceability Matrix](07-requirement-traceability/requirements-traceability-matrix.md) -> requirement ↔ test case ↔ defect mapping
 - [Test Execution Report](08-reports/test-execution-report.md) -> full results, findings, and defect analysis
