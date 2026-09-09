@@ -1,14 +1,14 @@
 # Requirements Traceability Matrix (RTM) – SauceDemo
 
-## Purpose
+## 1. Purpose
 
 This document traces each requirement defined in the [Requirement Analysis](../02-requirements-analysis/requirement.analysis.md) to the test case(s) that validate it, records the execution status of each test case, and links any failure to its corresponding defect report. It serves as the single point of reference for verifying requirement coverage and understanding the current quality status of the application.
 
 Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analysis.md) | [Test Plan TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md) | [Defect Reports](../05-bug-reports/)
 
----
+## 2. Requirements Traceability Matrix (RTM)
 
-## Authentication / Login
+### 2.1 Authentication / Login
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -18,7 +18,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Product Inventory
+### 2.2 Product Inventory
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -34,7 +34,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Product Detail
+### 2.3 Product Detail
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -47,7 +47,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Shopping Cart
+### 2.4 Shopping Cart
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -60,8 +60,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 | REQ-CART-04 | Checkout Eligibility | TC-309 | ❌ Failed | BUG-010 |
 
 
-
-## Checkout Step One (Customer Information)
+### 2.5 Checkout Step One (Customer Information)
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -74,7 +73,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Checkout Step Two (Overview)
+### 2.6 Checkout Step Two (Overview)
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -87,7 +86,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 | REQ-CKT2-05 | Order Completion & Cancellation | TC-512 | ❌ Failed | BUG-014 |
 
 
-## Checkout Complete
+### 2.7 Checkout Complete
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -99,7 +98,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Logout & Session Management
+### 2.8 Logout & Session Management
 
 | Req ID | Requirement Summary | Test Case ID(s) | Execution Status | Defect ID |
 |---|---|---|---|---|
@@ -110,7 +109,7 @@ Reference: [Requirement Analysis](../02-requirements-analysis/requirement.analys
 
 
 
-## Coverage Summary
+## 3. Coverage Summary
 
 - **Total Requirements:** 34
 - **Total Test Cases:** 80
