@@ -107,8 +107,8 @@ saucedemo-manual-testing/
 * Designed [Smoke test-suite](04-smoke-testing/smoke-test-suite.md) covering the critical user journey (login → checkout → confirmation), traceable back to the full suite.
 * Applied severity/priority based on actual user impact, not just pass/fail count.
 * Documented downstream impact when defects affected later stages of the workflow, e.g., an unresponsive form field was traced through to the checkout-blocking failure it caused.
-* Maintained full requirement-to-defect traceability via a dedicated [RTM](../07-requirement-traceability/requirements-traceability-matrix.md), rather than treating defects as standalone findings.
-* Produced separate [Test Execution Report](../08-reports/test-execution-report.md) and [Test Summary Report](../08-reports/test-summary-report.md), distinguishing suite-by-suite results from overall quality assessment and release readiness.
+* Maintained full requirement-to-defect traceability via a dedicated [Requirement Traceability Matrix](07-requirement-traceability/requirements-traceability-matrix.md), rather than treating defects as standalone findings.
+* Produced separate [Test Execution Report](08-reports/test-execution-report.md) and [Test Summary Report](08-reports/test-summary-report.md), distinguishing suite-by-suite results from overall quality assessment and release readiness.
 
 ## 🛠 Tools & Environment
   Manual testing · Chrome (latest) · Linux · Markdown · GitHub-based defect documentation · Playwright/TypeScript *(planned for automation)*
