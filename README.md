@@ -6,6 +6,19 @@ This repository contains the test cases, execution results, defect documentation
 
 **Results at a glance:** 72.5% pass rate (58/80 passed) · 18 defects logged · 13 rated Critical/High severity
 
+## 📑 Explore the Project
+
+| Document | Description |
+|---|---|
+| [Test Plan](01-test-plan/test-plan.md) | Scope, approach, and strategy |
+| [Requirement Analysis](02-requirements-analysis/requirement-analysis.md) | Reverse-engineered functional requirements |
+| [Test Suites](03-test-suites/) | 80 test cases across 8 feature suites |
+| [Smoke Test Suite](04-smoke-testing/smoke-test-suite.md) | 11-case critical-path suite |
+| [Defect Reports](05-defect-reports/) | 18 individual bug reports |
+| [Requirement Traceability Matrix](07-requirement-traceability/rtm.md) | Requirement ↔ test case ↔ defect mapping |
+| [Test Execution Report](08-reports/test-execution-report.md) | Full results, findings, and defect analysis |
+| [Test Summary Report](08-reports/test-summary-report.md) | Overall quality assessment and recommendations |
+
 ## 📌 What This Project Demonstrates
 - Test planning & strategy (risk-based approach)
 - Reverse-engineered requirement analysis with acceptance criteria and full requirement-to-defect traceability (RTM)
