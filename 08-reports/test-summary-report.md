@@ -28,7 +28,7 @@ This report summarizes the overall outcome of manual functional testing performe
 
 ## 3. Key Quality Findings
 
-Testing surfaced several recurring behavioral patterns rather than isolated failures; see [Cross-Cutting Observations](../08-reports/test-execution-report.md#cross-cutting-observations) in the Execution Report for full detail. Most notably:
+Testing surfaced several recurring behavioral patterns rather than isolated failures; see [Cross-Cutting Observations](https://github.com/BiswasAnanya/saucedemo-manual-testing/blob/main/08-reports/test-execution-report.md#5-cross-cutting-observations) in the Execution Report for full detail. Most notably:
 
 - Checkout sequence prerequisites are not consistently enforced across multiple entry points (empty cart, direct URL access to checkout pages).
 - Cart data is not isolated between user sessions, the most severe finding of this project.
