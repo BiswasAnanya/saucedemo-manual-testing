@@ -16,9 +16,9 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-AUTH-01 | System shall authenticate users based on username<br>and password, allowing valid predefined users to log in <br> and rejecting invalid attempts with appropriate error feedback. | Valid&nbsp;credentials&nbsp;🠂&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;🠂&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;🠂&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;🠂&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;🠂&nbsp;login&nbsp;blocked |
-| REQ‑AUTH‑02 | System shall load the Inventory page within an<br>acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
-| REQ‑AUTH‑03 | System shall restrict access to authenticated pages<br>unless a valid session exists. | No&nbsp;session&nbsp;🠂&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
+| REQ-AUTH-01 | System shall authenticate users based on username and password, allowing valid predefined users to log in and rejecting invalid attempts with appropriate error feedback. | Valid&nbsp;credentials&nbsp;🠂&nbsp;login&nbsp;succeeds<br>Wrong&nbsp;password&nbsp;🠂&nbsp;rejected&nbsp;with&nbsp;error<br>Blank&nbsp;username&nbsp;🠂&nbsp;required-field&nbsp;error<br>Unregistered&nbsp;credentials&nbsp;🠂&nbsp;rejected<br>Locked-out&nbsp;account&nbsp;🠂&nbsp;login&nbsp;blocked |
+| REQ‑AUTH‑02 | System shall load the Inventory page within an acceptable response time following a successful login. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;time |
+| REQ‑AUTH‑03 | System shall restrict access to authenticated pages unless a valid session exists. | No&nbsp;session&nbsp;🠂&nbsp;redirected&nbsp;to&nbsp;Login&nbsp;page |
 
 
 
@@ -26,12 +26,12 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ‑INV‑01 | System shall display the Inventory page after login<br>and allow navigation to and from individual<br>product details. | Inventory&nbsp;page&nbsp;loads&nbsp;after&nbsp;login<br>Clicking&nbsp;a&nbsp;product&nbsp;name&nbsp;navigates&nbsp;to&nbsp;its&nbsp;detail&nbsp;page<br>Returning&nbsp;from&nbsp;detail&nbsp;page&nbsp;retains&nbsp;previous&nbsp;sort&nbsp;order |
-| REQ-INV-02 | System shall allow products to be sorted by price<br>and name, and correctly reorder them based on<br>the selected option. | Sorting&nbsp;by&nbsp;price&nbsp;low🠂high&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;price&nbsp;high🠂low&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;A🠂Z&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;Z🠂A&nbsp;reorders&nbsp;correctly |
-| REQ-INV-03 | System shall display the correct image for each<br>product on the Inventory page. | All&nbsp;products&nbsp;show&nbsp;valid&nbsp;images,&nbsp;no&nbsp;broken/missing&nbsp;icons<br>Each&nbsp;product&nbsp;displays&nbsp;its&nbsp;corresponding&nbsp;image |
-| REQ-INV-04 | System shall present a consistent, correctly<br>aligned layout on the Inventory page. | Layout,&nbsp;spacing,&nbsp;and&nbsp;alignment&nbsp;are&nbsp;consistent<br>Product&nbsp;cards&nbsp;and&nbsp;controls&nbsp;are&nbsp;correctly&nbsp;positioned |
-| REQ-INV-05 | System shall load the Inventory page within an<br>acceptable response time. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;response&nbsp;time |
-| REQ-INV-06 | System shall ensure all interactive elements on the<br>Inventory page (buttons, menu links) respond<br>correctly. | All&nbsp;Add&nbsp;to&nbsp;Cart&nbsp;buttons&nbsp;are&nbsp;responsive<br>Burger&nbsp;Menu&nbsp;options&nbsp;respond&nbsp;correctly<br>About&nbsp;link&nbsp;redirects&nbsp;to&nbsp;the&nbsp;expected&nbsp;destination |
+| REQ‑INV‑01 | System shall display the Inventory page after login and allow navigation to and from individual product details. | Inventory&nbsp;page&nbsp;loads&nbsp;after&nbsp;login<br>Clicking&nbsp;a&nbsp;product&nbsp;name&nbsp;navigates&nbsp;to&nbsp;its&nbsp;detail&nbsp;page<br>Returning&nbsp;from&nbsp;detail&nbsp;page&nbsp;retains&nbsp;previous&nbsp;sort&nbsp;order |
+| REQ-INV-02 | System shall allow products to be sorted by price and name, and correctly reorder them based on<br>the selected option. | Sorting&nbsp;by&nbsp;price&nbsp;low🠂high&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;price&nbsp;high🠂low&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;A🠂Z&nbsp;reorders&nbsp;correctly<br>Sorting&nbsp;by&nbsp;name&nbsp;Z🠂A&nbsp;reorders&nbsp;correctly |
+| REQ-INV-03 | System shall display the correct image for each product on the Inventory page. | All&nbsp;products&nbsp;show&nbsp;valid&nbsp;images,&nbsp;no&nbsp;broken/missing&nbsp;icons<br>Each&nbsp;product&nbsp;displays&nbsp;its&nbsp;corresponding&nbsp;image |
+| REQ-INV-04 | System shall present a consistent, correctly aligned layout on the Inventory page. | Layout,&nbsp;spacing,&nbsp;and&nbsp;alignment&nbsp;are&nbsp;consistent<br>Product&nbsp;cards&nbsp;and&nbsp;controls&nbsp;are&nbsp;correctly&nbsp;positioned |
+| REQ-INV-05 | System shall load the Inventory page within an acceptable response time. | Inventory&nbsp;page&nbsp;loads&nbsp;within&nbsp;acceptable&nbsp;response&nbsp;time |
+| REQ-INV-06 | System shall ensure all interactive elements on the Inventory page (buttons, menu links) respond correctly. | All&nbsp;Add&nbsp;to&nbsp;Cart&nbsp;buttons&nbsp;are&nbsp;responsive<br>Burger&nbsp;Menu&nbsp;options&nbsp;respond&nbsp;correctly<br>About&nbsp;link&nbsp;redirects&nbsp;to&nbsp;the&nbsp;expected&nbsp;destination |
 
 
 
@@ -50,31 +50,31 @@ Reference: Test Plan [TP-SAUCEDEMO-2026-001](../01-test-plan/test-plan.md)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ-CART-01 | System shall allow users to add one or more<br>products to the cart, updating the button state<br>and cart badge accordingly. | Single,&nbsp;multiple,&nbsp;and&nbsp;all&nbsp;products&nbsp;can&nbsp;be&nbsp;added<br>Cart&nbsp;badge&nbsp;updates&nbsp;correctly&nbsp;when&nbsp;products&nbsp;are&nbsp;added<br>Product&nbsp;data&nbsp;and&nbsp;image&nbsp;remain&nbsp;accurate |
-| REQ-CART-02 | System shall allow users to remove products from<br>the cart, updating the button state and cart<br>badge accordingly. | Removing&nbsp;a&nbsp;product&nbsp;updates&nbsp;button&nbsp;and&nbsp;badge<br>Removed&nbsp;products&nbsp;no&nbsp;longer&nbsp;appear&nbsp;in&nbsp;the&nbsp;cart |
-| REQ-CART-03 | System shall display the Cart page with correct<br>layout, alignment, and positioning of elements. | Cart&nbsp;layout&nbsp;is&nbsp;correctly&nbsp;aligned<br>Cart&nbsp;icons&nbsp;are&nbsp;correctly&nbsp;positioned<br>Checkout&nbsp;button&nbsp;is&nbsp;correctly&nbsp;positioned |
-| REQ‑CART‑04 | System shall prevent users from proceeding to<br>checkout when the cart is empty. | Checkout&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
+| REQ-CART-01 | System shall allow users to add one or more products to the cart, updating the button state and cart badge accordingly. | Single,&nbsp;multiple,&nbsp;and&nbsp;all&nbsp;products&nbsp;can&nbsp;be&nbsp;added<br>Cart&nbsp;badge&nbsp;updates&nbsp;correctly&nbsp;when&nbsp;products&nbsp;are&nbsp;added<br>Product&nbsp;data&nbsp;and&nbsp;image&nbsp;remain&nbsp;accurate |
+| REQ-CART-02 | System shall allow users to remove products from the cart, updating the button state and cart badge accordingly. | Removing&nbsp;a&nbsp;product&nbsp;updates&nbsp;button&nbsp;and&nbsp;badge<br>Removed&nbsp;products&nbsp;no&nbsp;longer&nbsp;appear&nbsp;in&nbsp;the&nbsp;cart |
+| REQ-CART-03 | System shall display the Cart page with correct layout, alignment, and positioning of elements. | Cart&nbsp;layout&nbsp;is&nbsp;correctly&nbsp;aligned<br>Cart&nbsp;icons&nbsp;are&nbsp;correctly&nbsp;positioned<br>Checkout&nbsp;button&nbsp;is&nbsp;correctly&nbsp;positioned |
+| REQ‑CART‑04 | System shall prevent users from proceeding to checkout when the cart is empty. | Checkout&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
 
 ### Checkout Step One (Customer Information)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ‑CKT1‑01 | System shall display the Checkout Step One page<br>with all required customer information fields and<br>navigation controls. | Checkout&nbsp;Step&nbsp;One&nbsp;page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title<br>All&nbsp;required&nbsp;fields&nbsp;and&nbsp;buttons&nbsp;are&nbsp;displayed |
+| REQ‑CKT1‑01 | System shall display the Checkout Step One page with all required customer information fields and navigation controls. | Checkout&nbsp;Step&nbsp;One&nbsp;page&nbsp;loads&nbsp;with&nbsp;correct&nbsp;title<br>All&nbsp;required&nbsp;fields&nbsp;and&nbsp;buttons&nbsp;are&nbsp;displayed |
 | REQ‑CKT1‑02 | System shall validate customer information fields<br>and allow progression only when valid data<br>is provided. | Valid&nbsp;information&nbsp;allows&nbsp;progression&nbsp;to&nbsp;Step&nbsp;Two<br>Empty&nbsp;fields&nbsp;are&nbsp;rejected&nbsp;with&nbsp;a&nbsp;required-field&nbsp;error |
-| REQ‑CKT1‑03 | System shall allow users to cancel out of Checkout<br>Step One and return to the Cart page without<br>losing cart contents. | Cancel&nbsp;returns&nbsp;to&nbsp;Cart&nbsp;page&nbsp;with&nbsp;items&nbsp;unchanged |
-| REQ-CKT1-04 | System shall correctly accept and register<br>keyboard input into each customer<br>information field. | First&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Last&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>ZIP/Postal&nbsp;Code&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Valid&nbsp;input&nbsp;in&nbsp;all&nbsp;fields&nbsp;allows&nbsp;progression&nbsp;to&nbsp;the&nbsp;next&nbsp;step |
-| REQ‑CKT1‑05 | System shall prevent access to Checkout Step One<br>when the cart is empty. | Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
+| REQ‑CKT1‑03 | System shall allow users to cancel out of Checkout Step One and return to the Cart page without<br>losing cart contents. | Cancel&nbsp;returns&nbsp;to&nbsp;Cart&nbsp;page&nbsp;with&nbsp;items&nbsp;unchanged |
+| REQ-CKT1-04 | System shall correctly accept and register keyboard input into each customer information field. | First&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Last&nbsp;Name&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>ZIP/Postal&nbsp;Code&nbsp;field&nbsp;accepts&nbsp;keyboard&nbsp;input&nbsp;correctly<br>Valid&nbsp;input&nbsp;in&nbsp;all&nbsp;fields&nbsp;allows&nbsp;progression&nbsp;to&nbsp;the&nbsp;next&nbsp;step |
+| REQ‑CKT1‑05 | System shall prevent access to Checkout Step One when the cart is empty. | Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
 
 
 ### Checkout Step Two (Overview)
 
 | Req ID | Requirement | Acceptance Criteria |
 |---|---|---|
-| REQ‑CKT2‑01 | System shall display the Checkout Overview page<br>only after valid customer information has been<br>submitted, and shall block direct access when<br>the cart is empty. | Overview&nbsp;page&nbsp;loads&nbsp;after&nbsp;valid&nbsp;Step&nbsp;One&nbsp;submission<br>Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
-| REQ‑CKT2‑02 | System shall accurately display all cart items,<br>their details, and quantities on the<br>Overview page. | All&nbsp;cart&nbsp;items&nbsp;are&nbsp;listed&nbsp;with&nbsp;correct&nbsp;details<br>Item&nbsp;details&nbsp;match&nbsp;what&nbsp;was&nbsp;added&nbsp;to&nbsp;cart<br>Item&nbsp;quantity&nbsp;is&nbsp;displayed&nbsp;correctly |
-| REQ‑CKT2‑03 | System shall display dummy payment and shipping<br>information on the Overview page. | Payment&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed<br>Shipping&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed |
-| REQ‑CKT2‑04 | System shall correctly calculate and display the<br>item total, tax, and overall total. | Price&nbsp;Total&nbsp;section&nbsp;is&nbsp;displayed<br>Item&nbsp;Total&nbsp;equals&nbsp;the&nbsp;exact&nbsp;sum&nbsp;of&nbsp;item&nbsp;prices |
+| REQ‑CKT2‑01 | System shall display the Checkout Overview page only after valid customer information has been<br>submitted, and shall block direct access when<br>the cart is empty. | Overview&nbsp;page&nbsp;loads&nbsp;after&nbsp;valid&nbsp;Step&nbsp;One&nbsp;submission<br>Direct&nbsp;URL&nbsp;access&nbsp;is&nbsp;blocked&nbsp;when&nbsp;cart&nbsp;is&nbsp;empty |
+| REQ‑CKT2‑02 | System shall accurately display all cart items, their details, and quantities on the<br>Overview page. | All&nbsp;cart&nbsp;items&nbsp;are&nbsp;listed&nbsp;with&nbsp;correct&nbsp;details<br>Item&nbsp;details&nbsp;match&nbsp;what&nbsp;was&nbsp;added&nbsp;to&nbsp;cart<br>Item&nbsp;quantity&nbsp;is&nbsp;displayed&nbsp;correctly |
+| REQ‑CKT2‑03 | System shall display dummy payment and shipping information on the Overview page. | Payment&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed<br>Shipping&nbsp;Information&nbsp;section&nbsp;is&nbsp;displayed |
+| REQ‑CKT2‑04 | System shall correctly calculate and display the item total, tax, and overall total. | Price&nbsp;Total&nbsp;section&nbsp;is&nbsp;displayed<br>Item&nbsp;Total&nbsp;equals&nbsp;the&nbsp;exact&nbsp;sum&nbsp;of&nbsp;item&nbsp;prices |
 | REQ-CKT2-05 | System shall allow users to complete or cancel<br>the order from the Overview page. | Finish&nbsp;completes&nbsp;the&nbsp;order&nbsp;and&nbsp;navigates&nbsp;to&nbsp;confirmation<br>Cancel&nbsp;returns&nbsp;to&nbsp;Inventory&nbsp;with&nbsp;cart&nbsp;unchanged |
 
 
