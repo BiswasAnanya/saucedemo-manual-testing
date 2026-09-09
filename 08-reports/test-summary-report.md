@@ -1,6 +1,6 @@
 # Test Summary Report – SauceDemo
 
-**Reference:** Test Plan TP-SAUCEDEMO-2026-001 | [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-rtm/rtm.md)
+**Reference:** [Test Plan TP-SAUCEDEMO-2026-001](01-test-plan/test-plan.md)| [Test Execution Report](../08-reports/test-execution-report.md) | [RTM](../07-rtm/rtm.md)
 **Project:** SauceDemo-Manual Testing Project
 **Test Period:** [Start Date – End Date]
 **Tester/Author:** Ananya Biswas
