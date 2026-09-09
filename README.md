@@ -98,6 +98,38 @@ saucedemo-manual-testing/
 │
 └── README.md
 ```
+📂 Repository Structure3
+```
+saucedemo-manual-testing/
+├── 01-test-plan
+│   └── test-plan.md
+├── 02-requirements-analysis
+│   └── requirement.analysis.md
+├── 03-test-suites
+│   ├── ts00-authentication-login.md
+│   ├── ts01-product-inventory.md
+│   ├── ts02-product-detail.md
+│   ├── ts03-shopping-cart.md
+│   ├── ts04-checkout-stepone-customerinfo.md
+│   ├── ts05-checkout-steptwo-overview.md
+│   ├── ts06-checkout-stepthree-complete.md
+│   └── ts07-logout-sessionhandling.md
+├── 04-smoke-testing
+│   └── smoke-test-suite.md
+├── 05-bug-reports
+│   ├── bug-001-page-loading-delay.md
+│   ├── bug-002-incorrect-product-image-inventory.md
+│   ├── ...
+│   ├── bug-017-cross-user-cart-data-isolation.md
+│   └── bug-018-about-link-404.md
+├── 06-screenshots
+├── 07-requirement-traceability
+│   └── requirements-traceability-matrix.md
+├── 08-reports
+│   ├── test-execution-report.md
+│   └── test-summary-report.md
+└── README.md
+```
 
 ## ⭐ QA Highlights
 
