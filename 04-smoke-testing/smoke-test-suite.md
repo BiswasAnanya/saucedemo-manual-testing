@@ -2,11 +2,12 @@
 
 ## Overview
 
-This Smoke Test Suite contains a prioritized subset of SauceDemo functional test cases selected to validate the application's most critical business workflows.
+A Smoke Test Suite quickly verifies that the application’s critical workflows are stable before deeper testing begins, helping to detect build-blocking issues early and avoid wasting effort on an unstable build.
+This Smoke Test Suite contains a prioritized subset of [SauceDemo](https://www.saucedemo.com/) functional test cases selected to validate the application's most critical business workflows.
 
 This suite focuses on the primary customer journey:
 
-**Login → Browse Products → Add to Cart → Checkout → Order Confirmation**
+**Login ⇨ Browse Products ⇨ Add to Cart ⇨ Checkout ⇨ Order Confirmation**
 
 It also includes essential logout functionality. These scenarios provide a quick assessment of whether the application is stable enough for further functional or regression testing. The original manual test case IDs are referenced below to maintain traceability between the complete test suite and the prioritized smoke coverage.
 
@@ -30,7 +31,7 @@ It also includes essential logout functionality. These scenarios provide a quick
 The **10 smoke tests** provide coverage of the application's most important functional areas:
 
 * **Authentication** – Valid login and logout
-* **Product Inventory** – Inventory loading and product sorting
+* **Product Inventory** – Inventory page load
 * **Shopping Cart** – Adding single and multiple products
 * **Checkout** – Customer information and Overview navigation
 * **Order Completion** – Completing an order successfully
@@ -38,24 +39,23 @@ The **10 smoke tests** provide coverage of the application's most important func
 * **Session Management** – Successful logout
 
 
-
- ## Entry Criteria
+## Entry Criteria
    - Application is deployed and accessible
 
- ## Exit Criteria
-   - All 10 smoke tests pass → Proceed with the full regression suite
-   - Any Critical-priority failure → Hold further testing, report to the designated team 
+## Exit Criteria
+   - All 10 smoke tests pass ⇒ Proceed with the full regression suite
+   - Any Critical-priority failure ⇒ Hold further testing, investigate before proceeding
 
- ## Out of Scope for Smoke Testing
+## Out of Scope for Smoke Testing
 
    - Negative/invalid input scenarios
-   - Special-user behavior (problem_user, error_user, etc.)
+   - Special-user behavior (`problem_user`, `error_user`, etc.)
    - UI/visual validation
    - Edge cases and boundary testing
 
 ## Automation Usage
 
-These smoke tests will serve as the initial automation scope for the **Playwright + TypeScript** test suite.
+These smoke tests will serve later as the initial automation scope for the **Playwright + TypeScript** test suite.
 
 Each `SMK-XXX` test will be mapped to an automated test case, allowing the same critical functional coverage to be executed repeatedly as a fast regression check after application changes or deployments.
 
@@ -71,7 +71,7 @@ Each `SMK-XXX` test will be mapped to an automated test case, allowing the same 
 | SMK-006       | TC-403           |
 | SMK-007       | TC-501           |
 | SMK-008       | TC-510           |
-| SMK-008       | TC-606           |
+| SMK-009       | TC-606           |
 | SMK-010       | TC-702           |
 
-
+Each requirement above is mapped to its corresponding test case(s), execution status, and defects (if found)in the [Requirement Traceability Matrix](07-requirement-traceability/requirements-traceability-matrix.md).
